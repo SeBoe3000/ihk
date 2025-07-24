@@ -1,0 +1,120 @@
+HTML
+Seitenstrukturierung
+- header, nav, footer 
+- main, article, section 
+- aside
+
+
+Überschriften
+- h1
+- h2, h3
+
+Textstruktur
+- p, pre
+- figure, figcaption 
+- hr, br
+- div
+
+Listen
+- ol, ul, li 
+- dl, dt, dd
+
+Textauszeichnung
+- a
+- em, strong
+- span
+
+Text
+- blockquote
+- abbr
+
+Tabelle
+- table, thead, tbody, tfoot
+- tr, th, td
+- caption
+
+Multimedia und Grafiken
+- img
+- svg, iframe
+- audio, video, source
+
+Formulare
+- form
+- label
+- input, textarea
+- select, option
+- button
+
+Interaktiv
+- details, summary
+
+
+
+CSS
+Selektoren
+- Elementselektor 
+- Klassenselektor  
+- ID-Selektor 
+- Attributselektor 
+- Pseudoklasse (mind. 2 Arten) 
+- Pseudoelemente (mind. 2 Arten) 
+- Kombinator (mind. 3 Arten)
+
+Positionierung
+- relative
+- absolute
+- sticky
+- fixed
+
+Einbindung
+- @font-face (Schriftart lokal)
+- Favicon
+
+Gestaltung
+- Tabellen
+- Formulare
+
+
+
+PHP
+- Kontaktformular funktionsfähig (Alle Eingaben angezeigt) 
+- Include (oder require) mind. 3 mal eingesetzt, um Redundanzen zu vermeiden
+
+
+
+Eindruck
+Inhaltliches
+- Sinnvoller Text und sinnvoller Aufbau der Webseite
+  (Kein Blindtext | Zum Thema passende Texte | Footer und Datenschutz vorhanden) 
+
+Layout
+- Einheitliches Layout (nicht von Seite zu Seite anders) 
+- Bündige Linien, alles sichtbar bei 100% 
+- Impressum und Datenschutz im Footer (nicht Header) 
+
+Benutzeroberfläche
+- Logo mit Verknüpfung zur Startseite 
+- Einheitliche Beschriftungen und nachvollziehbare Navigation 
+- Pflichtfelder hervorgehoben (z.B. durch *) 
+- Funktionale Labels bei Eingabefeldern
+  (Klick auf Text soll z.B. Checkbox aktivieren oder zu Eingabefeld führen) 
+
+
+Negatives
+Fehler
+- Syntaxfehler bei HTML (-1P pro Fehlertyp)
+  (Hinweis: Auch bei Impressum und Datenschutz! ONLINE-VALIDATOR mit Google Chrome nutzen!
+  Wichtig: Dozent prüft Fehler nicht, sondern zählt lediglich.)
+- Hinweise oder Fehler bei PHP (-2P pro Fehler) 
+- Links / Menüeinträge funktionieren nicht (-1P pro Link) 
+
+Ordnerstruktur und Dateinamen
+- Datei- und Ordnerstruktur nicht eingehalten (-1P pro Datei / Ordner)
+  (In der ZIP-Datei darf zudem kein Unterordner mit dem Projekt sein! SEHR HÄUFIG IGNORIERT!) 
+- Dateinamen haben: Großbuchstaben, Leerzeichen, Umlaute, Sonderzeichen
+  (Bitte auch bei Bildern, Medien und Schriftarten! Minuszeichen möglich. -1P pro Datei / Ordner)
+
+Sonstiges
+- Hohe Ladezeiten (z.B. weil Bilder mit mehr als 5 MB geladen werden müssen)  
+- Schlecht formatierter Quelltext (Einheitlich verschachtelt ► Empfehlung: Code Beautifier. Kein Wechsel z.B. zwischen <br> und <br />) 
+- Mediendateien lassen sich nicht abspielen (Häufiger Grund: Absoluter Pfad oder falscher relativer Pfad) 
