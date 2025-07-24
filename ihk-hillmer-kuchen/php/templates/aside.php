@@ -1,4 +1,4 @@
-<header>
+<aside>
     <nav>
         <ul>
             <li><a href="<?= $relPath ?>php/datenschutz.php">Datenschutz</a></li>
@@ -6,4 +6,4 @@
             <li><a href="<?= $relPath ?>php/kontakt.php">Kontakt</a></li>
         </ul>
     </nav>
-</header>
+</aside>
