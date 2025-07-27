@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '\funktionen.php';
+include __DIR__ . '/funktionen.php';
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -9,4 +9,6 @@ include __DIR__ . '\funktionen.php';
     <title><?= $siteName ?? 'Standardtitel' ?></title>
 </head>
 <body>
-    
+    <?php include("$relPath"."php/templates/header.php"); ?>
+    <main>
+        

@@ -1,3 +1,38 @@
 body {
-    background: red;
+    background: yellow;
+}
+
+/* Gestaltung Rezepttabelle */
+.rezept {
+    width: 100%; /* Tabelle nimmt volle Breite ein */
+    border-collapse: collapse;
+}
+
+/* th, td, caption */
+.rezept th, .rezept td, .rezept caption {
+    border: 3px solid #000000;
+    padding: 0.4rem;
+    vertical-align: top; /* Positioniert Text in Spalte oben */
+}
+
+.rezept caption {
+    border-bottom: none; /* Entfernt doppelte Linie zwischen caption und thead tr */
+}
+
+.rezept thead th,
+.rezept caption {
+    background-color: blue;
+    color: white;
+}
+
+tfoot td {
+    background-color: #f3f3f3;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.grid { /* Anordnung Zutaten in 4 Bereiche */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
