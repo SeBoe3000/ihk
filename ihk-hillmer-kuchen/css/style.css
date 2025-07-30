@@ -1,58 +1,110 @@
 /* Standardfarben Light und Dark Mode */
 :root {
-    --bgp: #89fc83; /* Hintergrund primary */
-    --bga: #4ba437; /* Hintergrund accent */
-    --text: #000000; /* Textfarbe */
-    --line: #000000; /* Linien */
+    --bgp: #89fc83;     /* Hintergrund primary */
+    --bga: #4ba437;     /* Hintergrund accent */
+    --text: #000000;    /* Textfarbe */
+    --line: #000000;    /* Linien */
 }
-
 body.dark {
-    --bgp: #0f4929; /* Hintergrund primary */
-    --bga: #3a9c33; /* Hintergrund accent */
-    --text: #ffffff; /* Textfarbe */
-    --line: #ffffff; /* Linien */
+    --bgp: #0f4929;     /* Hintergrund primary */
+    --bga: #3a9c33;     /* Hintergrund accent */
+    --text: #ffffff;    /* Textfarbe */
+    --line: #ffffff;    /* Linien */
 }
-
 /* Anwendung auf body */
 body {
-  background-color: var(--bgp);
-  color: var(--text);
+    background-color: var(--bgp);
+    color: var(--text);
 }
 
 
-/* Gestaltung Rezepttabelle Anfang */
+
+/* Gestaltung Rezepttabelle */
 .rezept {
-    width: 100%; /* Tabelle nimmt volle Breite ein */
+    width: 100%;                /* Tabelle nimmt volle Breite ein */
     border-collapse: collapse;
 }
-
-/* th, td, caption */
 .rezept th, .rezept td, .rezept caption {
     border: 3px solid var(--line);
     padding: 0.4rem;
-    vertical-align: top; /* Positioniert Text in Spalte oben */
+    vertical-align: top;
+    /* Positioniert Text in Spalte oben */
 }
-
 .rezept caption {
-    border-bottom: none; /* Entfernt doppelte Linie zwischen caption und thead tr */
+    border-bottom: none;    /* Entfernt doppelte Linie zwischen caption und thead tr */
 }
-
-.rezept thead th,
-.rezept caption {
+.rezept thead th, .rezept caption {
     background-color: var(--bga);
     color: white;
 }
-
 tfoot td {
     background-color: var(--bga);
     font-size: 0.7em;
     text-align: center;
 }
-
-.grid { /* Anordnung Zutaten in 4 Bereiche */
+.grid {
+    /* Anordnung Zutaten in 4 Bereiche */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
-/* Gestaltung Rezepttabelle Ende */
+
+
+/* Gestaltung von Links */
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Gestaltung von Formularen */
+/* Farbe Platzhalter */
+input::placeholder, textarea::placeholder {
+    color: var(--bga);
+}
+
+/* Anordnung Label+Input über volle Breite. Anordnung Checkbox+Label ganz links. Anordnung Buttons in Mitte */
+.form-group {
+    display: grid;
+    grid-template-columns: 100px auto;  /* Label fix, Feld flexibel */
+    align-items: center;                /* Label vertikal zentriert */
+    width: 100%;                        /* Form-Gruppen füllen volle Breite */
+    max-width: 100vw;                   /* max Breite: Bildschirmbreite */
+}
+.form-checkbox, .form-button {
+    display: flex;
+}
+.form-checkbox {
+    width: fit-content;     /* nur so breit wie nötig */
+    margin-left: 0;         /* ganz links */
+}
+.form-button {
+    gap: 1em;           /* Abstand zwischen Buttons */
+    width: fit-content; /* nur so breit wie nötig */
+    margin-left: auto;  /* mittig */
+    margin-right: auto; /* mittig */
+}
+
+/* Kein Textumbruch von Labels */
+label {
+    white-space: nowrap;    
+}
+
+/* Abstände zwischen Text und Elementen */
+.form-group, .form-checkbox, .form-button {
+    margin-bottom: 1em; /* Abstand zu nächsten Elementen */
+    gap: 0.5em;         /* Abstand zwischen Text und Eingabe*/
+}
+input, textarea, select, button {
+    padding: 0.4em;     /* Innenabstand Eingabefelder */          
+}
+
+/* Höhe Textarea */
+textarea {
+    height: 100px;  
+}
