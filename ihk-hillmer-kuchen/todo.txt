@@ -1,8 +1,8 @@
 HTML
 Seitenstrukturierung
-- header, nav, footer 
-- main, article, section 
-- aside
+- header, nav, footer --> ok
+- main, article, section --> nur main bisher
+- aside --> ohne Inhalt aktuell
 
 
 Überschriften
@@ -12,15 +12,15 @@ Seitenstrukturierung
 Textstruktur
 - p, pre
 - figure, figcaption 
-- hr, br
-- div
+- hr, br --> nur br bisher
+- div --> ok
 
 Listen
-- ol, ul, li 
+- ol, ul, li --> ok
 - dl, dt, dd
 
 Textauszeichnung
-- a
+- a --> ok
 - em, strong
 - span
 
@@ -29,9 +29,9 @@ Text
 - abbr
 
 Tabelle
-- table, thead, tbody, tfoot
-- tr, th, td
-- caption
+- table, thead, tbody, tfoot --> ok
+- tr, th, td --> ok
+- caption --> ok
 
 Multimedia und Grafiken
 - img
@@ -39,11 +39,11 @@ Multimedia und Grafiken
 - audio, video, source
 
 Formulare
-- form
-- label
-- input, textarea
-- select, option
-- button
+- form --> ok
+- label --> ok
+- input, textarea --> ok
+- select, option --> ok
+- button --> ok
 
 Interaktiv
 - details, summary
@@ -71,14 +71,14 @@ Einbindung
 - Favicon
 
 Gestaltung
-- Tabellen
+- Tabellen --> ok
 - Formulare
 
 
 
 PHP
-- Kontaktformular funktionsfähig (Alle Eingaben angezeigt) 
-- Include (oder require) mind. 3 mal eingesetzt, um Redundanzen zu vermeiden
+- Kontaktformular funktionsfähig (Alle Eingaben angezeigt) --> ok
+- Include (oder require) mind. 3 mal eingesetzt, um Redundanzen zu vermeiden --> ok
 
 
 
