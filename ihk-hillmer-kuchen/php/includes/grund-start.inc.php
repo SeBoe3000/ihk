@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/funktionen.php';
+include_once __DIR__ . '/funktionen.php';
 ?>
 <!DOCTYPE html>
 <html lang="de">

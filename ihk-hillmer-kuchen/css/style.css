@@ -2,7 +2,7 @@ body {
     background: yellow;
 }
 
-/* Gestaltung Rezepttabelle */
+/* Gestaltung Rezepttabelle Anfang */
 .rezept {
     width: 100%; /* Tabelle nimmt volle Breite ein */
     border-collapse: collapse;
@@ -36,3 +36,5 @@ tfoot td {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
+
+/* Gestaltung Rezepttabelle Ende */

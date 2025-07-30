@@ -9,7 +9,7 @@ zum Testen Anfang <br>
 <?php include("php/templates/footer.php"); ?> <br>
 zum Testen Ende <br> <br>
 
-<?php include("php/rezepte/testrezept.php"); ?>
+<?php include("php/rezepte/apfel-grieß-pancakes.php"); ?>
 
 
 <?php
