@@ -4,6 +4,15 @@ function getPageTitle($siteName = null) {
     return $siteName ?? 'Standardtitel';
 }
 
+// aktueller Modus ermitteln
+function getMode($mode){
+    if ($mode === 'dark') {
+        return '<a href="?mode=light">Heller Modus</a>';
+    } else {
+        return '<a href="?mode=dark">Dunkler Modus</a>';
+    }
+}
+
 // Listen für Rezept (Zutaten und Schritte) erstellen
 function erstelleListeRezept($listType = 'ul', $rezeptString) {
     // Ausgabe nur bei ul, ol ansonsten still abbrechen

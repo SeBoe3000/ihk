@@ -1,6 +1,24 @@
-body {
-    background: yellow;
+/* Standardfarben Light und Dark Mode */
+:root {
+    --bgp: #89fc83; /* Hintergrund primary */
+    --bga: #4ba437; /* Hintergrund accent */
+    --text: #000000; /* Textfarbe */
+    --line: #000000; /* Linien */
 }
+
+body.dark {
+    --bgp: #0f4929; /* Hintergrund primary */
+    --bga: #3a9c33; /* Hintergrund accent */
+    --text: #ffffff; /* Textfarbe */
+    --line: #ffffff; /* Linien */
+}
+
+/* Anwendung auf body */
+body {
+  background-color: var(--bgp);
+  color: var(--text);
+}
+
 
 /* Gestaltung Rezepttabelle Anfang */
 .rezept {
@@ -10,7 +28,7 @@ body {
 
 /* th, td, caption */
 .rezept th, .rezept td, .rezept caption {
-    border: 3px solid #000000;
+    border: 3px solid var(--line);
     padding: 0.4rem;
     vertical-align: top; /* Positioniert Text in Spalte oben */
 }
@@ -21,12 +39,12 @@ body {
 
 .rezept thead th,
 .rezept caption {
-    background-color: blue;
+    background-color: var(--bga);
     color: white;
 }
 
 tfoot td {
-    background-color: #f3f3f3;
+    background-color: var(--bga);
     font-size: 0.7em;
     text-align: center;
 }

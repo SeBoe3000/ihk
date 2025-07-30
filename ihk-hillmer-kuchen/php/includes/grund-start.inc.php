@@ -1,6 +1,15 @@
 <?php
 include_once __DIR__ . '/funktionen.php';
+
+// Zum Umschalten von Light und Dark Mode per Link und auslesen innerhalb einer Session
+session_start();
+if (isset($_GET['mode']) && in_array($_GET['mode'], ['light', 'dark'])) {
+    $_SESSION['mode'] = $_GET['mode'];
+}
+$mode = $_SESSION['mode'] ?? 'light';
+$darkClass = ($mode === 'dark') ? 'dark' : '';
 ?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -8,7 +17,7 @@ include_once __DIR__ . '/funktionen.php';
     <link rel="stylesheet" href="<?= $relPath ?>css/style.css">
     <title><?= $siteName ?? 'Standardtitel' ?></title>
 </head>
-<body>
+<body class="<?= $darkClass ?>">
     <?php include("$relPath"."php/templates/header.php"); ?>
     <main>
         
