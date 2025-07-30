@@ -68,7 +68,7 @@ Positionierung
 
 Einbindung
 - @font-face (Schriftart lokal)
-- Favicon
+- Favicon --> ok (Nachfrage: muss es die Endung .ico haben, oder darf es auch .svg sein?)
 
 Gestaltung
 - Tabellen --> ok

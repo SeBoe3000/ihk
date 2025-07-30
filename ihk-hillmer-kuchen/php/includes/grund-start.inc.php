@@ -15,6 +15,7 @@ $darkClass = ($mode === 'dark') ? 'dark' : '';
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="<?= $relPath ?>css/style.css">
+    <link rel="icon" href="<?= $relPath ?>favicon.svg">
     <title><?= $siteName ?? 'Standardtitel' ?></title>
 </head>
 <body class="<?= $darkClass ?>">
