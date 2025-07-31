@@ -1,3 +1,9 @@
+/* Schriftart einbinden*/
+@font-face {
+   font-family: "LibertinusSans";
+   src: url("../assets/fonts/LibertinusSans-Regular.ttf");
+}
+
 /* Standardfarben Light und Dark Mode */
 :root {
     --bgp: #F9F4F5;     /* Hintergrund primary */
@@ -18,6 +24,7 @@ body.dark {
 /* Anwendung auf body */
 body {
     color: var(--text);
+    font-family: "LibertinusSans";
 }
 
 
@@ -196,9 +203,15 @@ a:hover {
 
 
 /* Gestaltung von Formularen */
-/* Farbe Platzhalter */
-input::placeholder, textarea::placeholder {
+/* Farbe Platzhalter, Auswahlen und Button */
+input::placeholder, textarea::placeholder, option {
     color: var(--bga);
+    font-family: "LibertinusSans";
+}
+button {
+    color: var(--bgp);
+    font-family: "LibertinusSans";
+    background-color: var(--bga);
 }
 
 /* Anordnung Label+Input über volle Breite. Anordnung Checkbox+Label ganz links. Anordnung Buttons in Mitte */

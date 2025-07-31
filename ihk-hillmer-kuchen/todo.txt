@@ -4,7 +4,6 @@ Seitenstrukturierung
 - main, article, section --> article noch verwenden.
 - aside --> ok
 
-
 Überschriften
 - h1
 - h2, h3
@@ -67,7 +66,7 @@ Positionierung
 - fixed --> ok
 
 Einbindung
-- @font-face (Schriftart lokal)
+- @font-face (Schriftart lokal) --> ok
 - Favicon --> ok (Nachfrage: muss es die Endung .ico haben, oder darf es auch .svg sein?) _____
 
 Gestaltung
