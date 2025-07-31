@@ -13,8 +13,8 @@ zum Testen Anfang <br>
 zum Testen Ende <br> <br>
 
 <a href="php/kontakt.php">Kontakt</a> <br>
-<?php include("php/rezepte/apfel-grieß-pancakes.php"); ?>
-<?php include("php/rezepte/apfel-grieß-pancakes.php"); ?>
+<?php include("php/rezepte/apfel-grieß-pancakes.php"); ?> <br>
+<?php include("php/rezepte/apfel-grieß-pancakes.php"); ?> <br>
 </section>
 
 <?php

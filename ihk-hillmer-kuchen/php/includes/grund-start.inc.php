@@ -19,6 +19,7 @@ $darkClass = ($mode === 'dark') ? 'dark' : '';
     <title><?= $siteName ?? 'Standardtitel' ?></title>
 </head>
 <body class="<?= $darkClass ?>">
+    <a id="top"></a> <!-- Sprungmarke für Zurückbutton -->
     <?php include("$relPath"."php/templates/header.php"); ?>
     <main>
         <aside><?php include("$relPath"."php/templates/aside.php"); ?></aside>

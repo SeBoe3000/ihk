@@ -17,7 +17,6 @@ body.dark {
 }
 /* Anwendung auf body */
 body {
-    
     color: var(--text);
 }
 
@@ -29,8 +28,9 @@ header, footer {
    color: var(--text);
    text-align: center;
 }
-header, footer, aside, section {
-   padding: 5px;
+header, footer, aside {
+   padding-left: 5px;
+   padding-right: 5px;
 }
 body {
    margin: 0px;
@@ -45,6 +45,7 @@ aside {
    max-width: 160px;
 }
 section {
+   padding: 5px;
    background: var(--bgp);
    flex: 2;
    min-width: 0;          /* Verhindert, dass Inhalte Section zu breit machen. Container darf nicht überlaufen. */
@@ -53,14 +54,18 @@ main{
    display: flex;
    flex: 1;
 }
-
 html, body {
     overflow-x: hidden;
+}
+/* Keine Veränderung von header */
+header {
+    position: sticky;
+    top: 0;
 }
 
 
 
-/* Gestaltung Header und Footer  */
+/* Gestaltung Navigation in Header und Footer  */
 header nav li, footer nav li {
    background: var(--bga);
    display: inline-block;
@@ -80,6 +85,7 @@ header nav li:hover, footer nav li:hover{
 /* nur Footer */
 footer ul{
    text-align: right;
+   margin-right: 30px;
 }
 /* nur Header */
 header .dropdown-content {
@@ -100,7 +106,7 @@ header .dropdown:hover .dropdown-content {
 
 
 
-/* Gestaltung Aside (Werbeanzeige) */
+/* Gestaltung Navigation in Aside (Werbeanzeige) */
 /* Hinweis: Facebooks Iframe ist nicht responsive, daher fixe Breite von aside. */
 aside nav iframe {
    transform: scale(0.3);       /* Verkleinert Anzeige auf 30% */
@@ -110,6 +116,34 @@ aside nav iframe {
 aside nav {
     width: 150px;               /* feste Breite, da iframe skalliert wird */
     overflow-wrap: break-word;  /* Textumbruch, wenn nicht in Container passt*/
+    position: fixed;
+}
+
+
+
+/* Gestaltung ICON zurück nach oben */
+#back {
+    /* Fixierung Button */
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    /* Farbgestaltung */
+    background-color: var(--text);
+    color: var(--bga);
+    /* Runder Button herum */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    /* Schriftgröße */
+    font-size: 1.5em;
+    /* Icon in Mitte von Button plazieren */
+    line-height: 35px;
+    text-align: center;
+}
+
+#back:hover {
+    background-color: var(--bgs);
+    text-decoration: none;
 }
 
 

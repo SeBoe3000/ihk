@@ -54,7 +54,7 @@ CSS
 Selektoren
 - Elementselektor --> ok, z.B. body / header, footer
 - Klassenselektor --> ok, z.B. .rezept / .grid
-- ID-Selektor
+- ID-Selektor --> ok, z.B. #back
 - Attributselektor 
 - Pseudoklasse (mind. 2 Arten) --> ok, z.B. footer nav li:hover / a:hover
 - Pseudoelemente (mind. 2 Arten) --> input::placeholder, textarea::placeholder / einer fehlt noch _____
@@ -63,8 +63,8 @@ Selektoren
 Positionierung
 - relative --> ok
 - absolute --> ok
-- sticky
-- fixed
+- sticky --> ok
+- fixed --> ok
 
 Einbindung
 - @font-face (Schriftart lokal)
