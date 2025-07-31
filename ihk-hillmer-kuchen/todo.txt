@@ -1,8 +1,8 @@
 HTML
 Seitenstrukturierung
 - header, nav, footer --> ok
-- main, article, section --> nur main bisher
-- aside --> ohne Inhalt aktuell
+- main, article, section --> article noch verwenden.
+- aside --> ok
 
 
 Überschriften
@@ -35,7 +35,7 @@ Tabelle
 
 Multimedia und Grafiken
 - img
-- svg, iframe
+- svg, iframe --> ok
 - audio, video, source
 
 Formulare
@@ -52,13 +52,13 @@ Interaktiv
 
 CSS
 Selektoren
-- Elementselektor 
-- Klassenselektor  
-- ID-Selektor 
+- Elementselektor --> ok, z.B. body / header, footer
+- Klassenselektor --> ok, z.B. .rezept / .grid
+- ID-Selektor
 - Attributselektor 
-- Pseudoklasse (mind. 2 Arten) 
-- Pseudoelemente (mind. 2 Arten) 
-- Kombinator (mind. 3 Arten)
+- Pseudoklasse (mind. 2 Arten) --> ok, z.B. footer nav li:hover / a:hover
+- Pseudoelemente (mind. 2 Arten) --> input::placeholder, textarea::placeholder / einer fehlt noch _____
+- Kombinator (mind. 3 Arten) --> z.B. Nachfahre: footer nav li / zwei weitere fehlen noch _____
 
 Positionierung
 - relative
@@ -68,7 +68,7 @@ Positionierung
 
 Einbindung
 - @font-face (Schriftart lokal)
-- Favicon --> ok (Nachfrage: muss es die Endung .ico haben, oder darf es auch .svg sein?)
+- Favicon --> ok (Nachfrage: muss es die Endung .ico haben, oder darf es auch .svg sein?) _____
 
 Gestaltung
 - Tabellen --> ok
@@ -90,7 +90,7 @@ Inhaltliches
 Layout
 - Einheitliches Layout (nicht von Seite zu Seite anders) 
 - Bündige Linien, alles sichtbar bei 100% 
-- Impressum und Datenschutz im Footer (nicht Header) 
+- Impressum und Datenschutz im Footer (nicht Header) --> ok (Nachfrage: muss Kontakt auch im Footer sein?)
 
 Benutzeroberfläche
 - Logo mit Verknüpfung zur Startseite 

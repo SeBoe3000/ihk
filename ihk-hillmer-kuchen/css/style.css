@@ -41,8 +41,8 @@ body {
 aside {
    background: var(--bgs);
    flex: 1;
-   min-width: 100px;
-   max-width: 200px;
+   min-width: 160px;
+   max-width: 160px;
 }
 section {
    background: var(--bgp);
@@ -60,7 +60,7 @@ html, body {
 
 
 
-/* Gestaltung Navigation */
+/* Gestaltung Footer */
 
 footer nav li{
    display: inline-block;
@@ -77,6 +77,20 @@ footer nav a{
 }
 footer nav li:hover{
    background: var(--bgs);
+}
+
+
+
+/* Gestaltung Aside (Werbeanzeige) */
+/* Hinweis: Facebooks Iframe ist nicht responsive, daher fixe Breite von aside. */
+aside nav iframe {
+   transform: scale(0.3);       /* Verkleinert Anzeige auf 30% */
+   transform-origin: top left;  /* Festlegung Skalierungs-Ursprungspunkt */
+}
+
+aside nav {
+    width: 150px;               /* feste Breite, da iframe skalliert wird */
+    overflow-wrap: break-word;  /* Textumbruch, wenn nicht in Container passt*/
 }
 
 
