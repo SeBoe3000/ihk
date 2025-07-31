@@ -61,8 +61,8 @@ Selektoren
 - Kombinator (mind. 3 Arten) --> z.B. Nachfahre: footer nav li / zwei weitere fehlen noch _____
 
 Positionierung
-- relative
-- absolute
+- relative --> ok
+- absolute --> ok
 - sticky
 - fixed
 

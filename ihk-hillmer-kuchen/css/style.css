@@ -60,23 +60,42 @@ html, body {
 
 
 
-/* Gestaltung Footer */
-
-footer nav li{
+/* Gestaltung Header und Footer  */
+header nav li, footer nav li {
+   background: var(--bga);
    display: inline-block;
    padding: 5px;
-   margin-left: 20px;
+   margin-right: 20px;
 }
-footer ul{
+header ul, footer ul {
    padding-left: 0px;
-   text-align: right;
 }
-footer nav a{
+header nav a, footer nav a{
    color: var(--text);
    text-decoration: none;
 }
-footer nav li:hover{
+header nav li:hover, footer nav li:hover{
    background: var(--bgs);
+}
+/* nur Footer */
+footer ul{
+   text-align: right;
+}
+/* nur Header */
+header .dropdown-content {
+   position: absolute;
+   left: 0px;
+   top: 100%;
+   display: none;
+}
+header .dropdown-content li {
+   display: block;
+}
+header .dropdown {
+   position: relative;
+}
+header .dropdown:hover .dropdown-content {
+   display: block;
 }
 
 
