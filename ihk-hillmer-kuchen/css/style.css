@@ -92,7 +92,7 @@ header nav li:hover, footer nav li:hover{
 /* nur Footer */
 footer ul{
    text-align: right;
-   margin-right: 30px;
+   margin-right: 60px;
 }
 /* nur Header */
 header .dropdown-content {
