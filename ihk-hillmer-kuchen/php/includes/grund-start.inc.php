@@ -21,4 +21,6 @@ $darkClass = ($mode === 'dark') ? 'dark' : '';
 <body class="<?= $darkClass ?>">
     <?php include("$relPath"."php/templates/header.php"); ?>
     <main>
+        <aside><?php include("$relPath"."php/templates/aside.php"); ?></aside>
+        <section>
         

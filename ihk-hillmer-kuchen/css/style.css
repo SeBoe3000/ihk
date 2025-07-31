@@ -1,20 +1,61 @@
 /* Standardfarben Light und Dark Mode */
 :root {
-    --bgp: #89fc83;     /* Hintergrund primary */
-    --bga: #4ba437;     /* Hintergrund accent */
-    --text: #000000;    /* Textfarbe */
-    --line: #000000;    /* Linien */
+    --bgp: #F9F4F5;     /* Hintergrund primary */
+    --bgs: #D5C7E2;     /* Hintergrund second */
+    --bga: #9C88AC;     /* Hintergrund accent */
+    --text: #281826;    /* Textfarbe */
+    --texts: #502F4C;    /* Textfarbe second */ 
+    --line: #281826;    /* Linien */
 }
 body.dark {
-    --bgp: #0f4929;     /* Hintergrund primary */
-    --bga: #3a9c33;     /* Hintergrund accent */
-    --text: #ffffff;    /* Textfarbe */
-    --line: #ffffff;    /* Linien */
+    --bgp: #281826;     /* Hintergrund primary */
+    --bgs: #604464;     /* Hintergrund second */
+    --bga: #9C88AC;     /* Hintergrund accent */
+    --text: #F9F4F5;    /* Textfarbe */
+    --texts: #E1D6E8;    /* Textfarbe second */
+    --line: #F9F4F5;    /* Linien */
 }
 /* Anwendung auf body */
 body {
-    background-color: var(--bgp);
+    
     color: var(--text);
+}
+
+
+
+/* Gestaltung header, footer und co */
+header, footer {
+   background: var(--bga);
+   color: var(--text);
+   text-align: center;
+}
+header, footer, aside, section {
+   padding: 10px;
+}
+body {
+   margin: 0px;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+aside {
+   background: var(--bgs);
+   flex: 1;
+   min-width: 100px;
+   max-width: 200px;
+}
+section {
+   background: var(--bgp);
+   flex: 2;
+   min-width: 0;          /* Verhindert, dass Inhalte Section zu breit machen. Container darf nicht überlaufen. */
+}
+main{
+   display: flex;
+   flex: 1;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 
@@ -35,18 +76,22 @@ body {
 }
 .rezept thead th, .rezept caption {
     background-color: var(--bga);
-    color: white;
+    color: var(--texts);
 }
 tfoot td {
     background-color: var(--bga);
     font-size: 0.7em;
     text-align: center;
 }
-.grid {
-    /* Anordnung Zutaten in 4 Bereiche */
+.grid { /* Anordnung Zutaten in 4 Bereiche */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+}
+.table-wrapper { /* Horiziontales Scrollen, wenn Inhalt zu breit ist */
+    overflow-x: auto;
+    width: 100%;
+    scrollbar-color: var(--text) var(--bgp); /* Farbe Scrollbar */
 }
 
 

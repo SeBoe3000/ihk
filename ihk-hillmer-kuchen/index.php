@@ -3,6 +3,9 @@ $siteName = "Startseite";
 $relPath = '';
 include 'php/includes/grund-start.inc.php';
 ?>
+
+
+<section>
 zum Testen Anfang <br>
 <a href="php/datenschutz.php">Datenschutz aus Footer direkt öffnen</a> <br>
 <a href="php/unterseiten/test.php">Unterseite öffnen und hier Footer</a> <br>
@@ -11,7 +14,7 @@ zum Testen Ende <br> <br>
 
 <a href="php/kontakt.php">Kontakt</a> <br>
 <?php include("php/rezepte/apfel-grieß-pancakes.php"); ?>
-
+</section>
 
 <?php
 $relPath = '';

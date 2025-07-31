@@ -45,70 +45,72 @@ function erstelleKalorien($kalorien, $protein, $kohlenhydrate,$fett){
 
 // Rezepttabelle erstellen
 function erstelleTabelleRezept($rezeptname, $schritte, $tfoot, $zutaten1, $zutaten2, $zutaten3, $zutaten4, $zutaten5) {
-    $html = "<table class=\"rezept\">
-        <caption><strong>$rezeptname</strong></caption>
-        <thead>
-            <tr>
-                <th>Zutaten</th>
-                <th>Zubereitung</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <!-- Zutaten -->
-                <td>
-                    <div class=\"grid\">";
-                    if (trim($zutaten1) !== '') {
-                        $html .= "<!-- Block: Obst -->
-                            <div>
-                                <b>🍏🍌🫐 Obst</b>
-                                $zutaten1
-                            </div>";
-                    }
-                    if (trim($zutaten2) !== '') {
-                        $html .= "<!-- Block: Gemüse -->
-                            <div>
-                                <b>🥦🥕🍅 Gemüse</b>
-                                $zutaten2
-                            </div>";
-                    }
-                    if (trim($zutaten3) !== '') {
-                        $html .= "<!-- Block: Getreide -->
-                            <div>
-                                <b>🥔🌾 Getreide</b>
-                                $zutaten3
-                            </div>";
-                    }
-                    if (trim($zutaten4) !== '') {
-                        $html .= "<!-- Block: Tierisches -->
-                            <div>
-                                <b>🧀🥚🐮 Tierisches</b>
-                                $zutaten4
-                            </div>";
-                    }
-                    if (trim($zutaten5) !== '') {
-                        $html .= "<!-- Block: Sonstiges -->
-                            <div>
-                                <b>Sonstiges</b>
-                                $zutaten5
-                            </div>";
-                    }
-                    $html .= "</div>
-                </td>
-                <!-- Zubereitung -->
-                <td>
-                    $schritte
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan=\"2\">
-                    $tfoot
-                </td>
-            </tr>
-        </tfoot>
-    </table>";
-
+    $html = "<div class=\"table-wrapper\">
+        <table class=\"rezept\">
+            <caption><strong>$rezeptname</strong></caption>
+            <thead>
+                <tr>
+                    <th>Zutaten</th>
+                    <th>Zubereitung</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- Zutaten -->
+                    <td>
+                        <div class=\"grid\">";
+                        if (trim($zutaten1) !== '') {
+                            $html .= "<!-- Block: Obst -->
+                                <div>
+                                    <b>🍏🍌🫐 Obst</b>
+                                    $zutaten1
+                                </div>";
+                        }
+                        if (trim($zutaten2) !== '') {
+                            $html .= "<!-- Block: Gemüse -->
+                                <div>
+                                    <b>🥦🥕🍅 Gemüse</b>
+                                    $zutaten2
+                                </div>";
+                        }
+                        if (trim($zutaten3) !== '') {
+                            $html .= "<!-- Block: Getreide -->
+                                <div>
+                                    <b>🥔🌾 Getreide</b>
+                                    $zutaten3
+                                </div>";
+                        }
+                        if (trim($zutaten4) !== '') {
+                            $html .= "<!-- Block: Tierisches -->
+                                <div>
+                                    <b>🧀🥚🐮 Tierisches</b>
+                                    $zutaten4
+                                </div>";
+                        }
+                        if (trim($zutaten5) !== '') {
+                            $html .= "<!-- Block: Sonstiges -->
+                                <div>
+                                    <b>Sonstiges</b>
+                                    $zutaten5
+                                </div>";
+                        }
+                        $html .= "</div>
+                    </td>
+                    <!-- Zubereitung -->
+                    <td>
+                        $schritte
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan=\"2\">
+                        $tfoot
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>";
+    
     return $html;
 }
