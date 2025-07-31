@@ -30,7 +30,7 @@ header, footer {
    text-align: center;
 }
 header, footer, aside, section {
-   padding: 10px;
+   padding: 5px;
 }
 body {
    margin: 0px;
@@ -56,6 +56,27 @@ main{
 
 html, body {
     overflow-x: hidden;
+}
+
+
+
+/* Gestaltung Navigation */
+
+footer nav li{
+   display: inline-block;
+   padding: 5px;
+   margin-left: 20px;
+}
+footer ul{
+   padding-left: 0px;
+   text-align: right;
+}
+footer nav a{
+   color: var(--text);
+   text-decoration: none;
+}
+footer nav li:hover{
+   background: var(--bgs);
 }
 
 
