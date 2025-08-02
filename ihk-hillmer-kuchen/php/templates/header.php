@@ -7,19 +7,15 @@ include_once __DIR__ . '/../includes/funktionen.php';
         <ul>
             <li><a href="<?= $relPath ?>index.php">Start</a></li>
             <li><a href="<?= $relPath ?>php/uebersicht.php">Rezeptübersicht</a></li>
-            <li class="dropdown"><a href="<?= $relPath ?>php/uebersicht.php">Einzelne Rezepte</a>
+            <li class="dropdown"><a href="<?= $relPath ?>php/kreationen.php">Kreationen</a>
                 <ul class="dropdown-content">
-                    <li><a href="<?= $relPath ?>php/uebersicht.php">Rezept 1</a></li>
-                    <li><a href="<?= $relPath ?>php/uebersicht.php">Rezept 2</a></li>
+                    <li><a href="<?= $relPath ?>php/kreationen/dessertvariation.php">Dessertvariation</a></li>
+                    <li><a href="<?= $relPath ?>php/kreationen/mango-kokos-kugel.php">Mango-Kokos-Kugel</a></li>
+                    <li><a href="<?= $relPath ?>php/kreationen/schoko-kirsch-toertchen-mit-strukturbiskuit.php">Schoko-Kirsch-Törtchen-mit-Strukturbiskuit</a></li>
+                    <li><a href="<?= $relPath ?>php/kreationen/tiramisu.php">Tiramisu</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="<?= $relPath ?>php/uebersicht.php">Kreationen</a>
-                <ul class="dropdown-content">
-                    <li><a href="<?= $relPath ?>php/uebersicht.php">Kreation 1</a></li>
-                    <li><a href="<?= $relPath ?>php/uebersicht.php">Kreation 2</a></li>
-                </ul>
-            </li>
-            <li><a href="<?= $relPath ?>php/kontakt.php">Header 3</a></li>
+            <li><a href="<?= $relPath ?>php/kontakt.php">Kontakt</a></li>
             <li><?php echo getMode($mode) ?></li>
         </ul>
     </nav>

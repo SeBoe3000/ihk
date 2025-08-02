@@ -13,6 +13,7 @@ zum Testen Anfang <br>
 zum Testen Ende <br> <br>
 
 <a href="php/kreationen/schoko-kirsch-toertchen-mit-strukturbiskuit.php">Schoko-Kirsch Törtchen mit Strukturbiskuit</a> <br>
+<a href="php/kreationen/dessertvariation.php">Dessertvariation</a> <br>
 <a href="php/kontakt.php">Kontakt</a> <br>
 <?php include("php/rezepte/apfel-grieß-pancakes.php"); ?> <br>
 <?php include("php/rezepte/apfel-grieß-pancakes.php"); ?> <br>

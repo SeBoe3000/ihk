@@ -259,7 +259,11 @@ textarea {
 
 /* Gestaltung Bilder */
 /* Hinweis: Bei Änderung Seite hard neuladen mit STRG + F5 */
-figure #weihnachtsdessert{
+figure .dessertvariation{
     width: 100%;
+    height: auto;
+}
+figure .einzeldessert{
+    width: 30%;
     height: auto;
 }
