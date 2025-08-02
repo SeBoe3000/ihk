@@ -254,3 +254,12 @@ input, textarea, select, button {
 textarea {
     height: 100px;  
 }
+
+
+
+/* Gestaltung Bilder */
+/* Hinweis: Bei Änderung Seite hard neuladen mit STRG + F5 */
+figure #weihnachtsdessert{
+    width: 100%;
+    height: auto;
+}

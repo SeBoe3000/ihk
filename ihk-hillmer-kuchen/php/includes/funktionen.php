@@ -29,7 +29,7 @@ function erstelleListeRezept($listType = 'ul', $rezeptString) {
     // HTML-Liste erzeugen
     $html = "<$listType>\n";
     foreach ($rezept as $eintrag) {
-        $html .= "    <li>" . htmlspecialchars($eintrag) . "</li>\n";
+        $html .= "    <li>" . $eintrag . "</li>\n";
     }
     $html .= "</$listType>";
 
