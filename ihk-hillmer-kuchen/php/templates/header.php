@@ -5,7 +5,7 @@ include_once __DIR__ . '/../includes/funktionen.php';
 <header>
     <nav>
         <ul>
-            <li><a href="<?= $relPath ?>index.php">Start</a></li>
+            <li class = "icon"><a href="<?= $relPath ?>index.php"><img src="<?= $relPath ?>favicon.svg" alt="Kuchen"></a></li>
             <li><a href="<?= $relPath ?>php/uebersicht.php">Rezeptübersicht</a></li>
             <li class="dropdown"><a href="<?= $relPath ?>php/kreationen.php">Kreationen</a>
                 <ul class="dropdown-content">

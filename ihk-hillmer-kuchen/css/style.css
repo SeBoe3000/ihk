@@ -270,7 +270,7 @@ figure.fig90 {
 figure.fig30 {
     width: 30%;
 }
-img { /* 100% der Breite vom Container figure einnehmen, dadurch geht figcaption nicht über Bild hinaus. */
+figure.fig90 img, figure.fig30 img { /* 100% der Breite vom Container figure einnehmen, dadurch geht figcaption nicht über Bild hinaus. */
     width: 100%;
     height: auto;
     vertical-align: bottom;
@@ -290,4 +290,12 @@ figcaption {
 figure {
    position: relative;
    display: inline-block;
+}
+
+
+/* Icon für Startseite in Header */
+.icon {
+    width: 32px;
+    padding: 0px;
+    vertical-align: middle; /* Ausrichtung Icon vertikal mittig zur Grundlinie (baseline) vom umgebenden Text */
 }

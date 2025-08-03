@@ -92,7 +92,7 @@ Layout
 - Impressum und Datenschutz im Footer (nicht Header) --> ok (Nachfrage: muss Kontakt auch im Footer sein?)
 
 Benutzeroberfläche
-- Logo mit Verknüpfung zur Startseite 
+- Logo mit Verknüpfung zur Startseite --> ok
 - Einheitliche Beschriftungen und nachvollziehbare Navigation 
 - Pflichtfelder hervorgehoben (z.B. durch *) 
 - Funktionale Labels bei Eingabefeldern

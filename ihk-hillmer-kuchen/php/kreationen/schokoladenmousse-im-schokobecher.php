@@ -15,7 +15,7 @@ include '../includes/grund-start.inc.php';
 -   Schokoladenbecher
 
 xxx:
--	xxx
+-	xxxx
 </pre>
 
 <h2>Rezepte</h2>
