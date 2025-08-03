@@ -5,18 +5,18 @@ Seitenstrukturierung
 - aside --> ok
 
 Überschriften
-- h1
-- h2, h3
+- h1 --> ok
+- h2, h3 --> ok
 
 Textstruktur
 - p, pre
-- figure, figcaption 
+- figure, figcaption -->
 - hr, br 
 - div --> ok
 
 Listen
 - ol, ul, li --> ok
-- dl, dt, dd
+- dl, dt, dd --> ok
 
 Textauszeichnung
 - a --> ok
@@ -33,7 +33,7 @@ Tabelle
 - caption --> ok
 
 Multimedia und Grafiken
-- img
+- img --> ok
 - svg, iframe --> ok
 - audio, video, source
 

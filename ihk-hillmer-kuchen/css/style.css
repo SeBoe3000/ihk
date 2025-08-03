@@ -6,20 +6,24 @@
 
 /* Standardfarben Light und Dark Mode */
 :root {
-    --bgp: #F9F4F5;     /* Hintergrund primary */
-    --bgs: #D5C7E2;     /* Hintergrund second */
-    --bga: #9C88AC;     /* Hintergrund accent */
-    --text: #281826;    /* Textfarbe */
-    --texts: #502F4C;    /* Textfarbe second */ 
-    --line: #281826;    /* Linien */
+    --bgp: #F9F4F5;         /* Hintergrund primary */
+    --bgs: #D5C7E2;         /* Hintergrund second */
+    --bga-rgb: 156, 136, 172; /* Hintergrund accent #9C88AC */
+    --text: #281826;        /* Textfarbe */
+    --texts: #502F4C;       /* Textfarbe second */ 
+    --line: #281826;        /* Linien */
 }
 body.dark {
-    --bgp: #281826;     /* Hintergrund primary */
-    --bgs: #604464;     /* Hintergrund second */
-    --bga: #9C88AC;     /* Hintergrund accent */
-    --text: #F9F4F5;    /* Textfarbe */
-    --texts: #E1D6E8;    /* Textfarbe second */
-    --line: #F9F4F5;    /* Linien */
+    --bgp: #281826;         /* Hintergrund primary*/
+    --bgs: #604464;         /* Hintergrund second */
+    --bga-rgb: 156, 136, 172; /* Hintergrund accent #9C88AC */
+    --text: #F9F4F5;        /* Textfarbe */
+    --texts: #E1D6E8;       /* Textfarbe second */
+    --line: #F9F4F5;        /* Linien */
+}
+:root, body.dark {
+    --bga: rgb(var(--bga-rgb)); /* Hintergrund accent ohne Transparenz */
+    --bga-tran: rgba(var(--bga-rgb), 0.5); /* Hintergrund accent mit Transparenz */
 }
 /* Anwendung auf body */
 body {
@@ -257,13 +261,31 @@ textarea {
 
 
 
-/* Gestaltung Bilder */
+/* Gestaltung Bilder mit Unterschrift */
 /* Hinweis: Bei Änderung Seite hard neuladen mit STRG + F5 */
-figure .dessertvariation{
+.dessertvariation{
     width: 100%;
     height: auto;
 }
-figure .einzeldessert{
-    width: 30%;
+figure.einzeldessert { /* figure-Element mit Klasse einzeldessert, ansonsten geht figcaption über Bild hinaus */
+    width: 50%;
     height: auto;
+}
+figcaption {
+   background: var(--bga-tran);
+   font-size: 20px;
+   text-align: center;
+   color: var(--text);
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
+   padding: 5px;
+   box-sizing: border-box;
+}
+figure {
+   position: relative;
+   display: inline-block;
+}
+img {
+   vertical-align: bottom;
 }
