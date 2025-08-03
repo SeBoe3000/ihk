@@ -8,7 +8,7 @@ $obst = "";
 $gemuese = "";
 $getreide = erstelleListeRezept('ul', "170g Zucker; 85g Mehl");
 $tierisches = erstelleListeRezept('ul', "160g Butter; 20ml Milch; 3 Eier");
-$sonstiges = erstelleListeRezept('ul', "125g Zartbitter-kuvertüre; 40g Kakaopulver; ½ Vanilleschote");
+$sonstiges = erstelleListeRezept('ul', "125g Zartbitterkuvertüre; 40g Kakaopulver; ½ Vanilleschote");
 $schritte = erstelleListeRezept('ol', "Kuvertüre und Butter schmelzen;
 Zucker, Prise Salz, Milch, Vanille einrühren;
 Eier einrühren;

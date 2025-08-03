@@ -5,8 +5,8 @@ include '../includes/grund-start.inc.php';
 ?>
 <h1>Schoko-Kirsch Törtchen mit Strukturbiskuit</h1>
 
-<figure>
-   <img class="einzeldessert" src="../../assets/images/schoko-kirsch-toertchen-mit-strukturbiskuit.png" alt="Schoko-Kirsch-Törtchen mit Strukturbiskuit">
+<figure class="fig30">
+   <img src="../../assets/images/schoko-kirsch-toertchen-mit-strukturbiskuit.png" alt="Schoko-Kirsch-Törtchen mit Strukturbiskuit">
    <figcaption>Schoko-Kirsch-Törtchen mit Strukturbiskuit</figcaption>
 </figure>
 

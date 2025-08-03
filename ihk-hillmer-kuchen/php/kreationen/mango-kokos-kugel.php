@@ -5,8 +5,8 @@ include '../includes/grund-start.inc.php';
 ?>
 <h1>Mango-Kokos-Kugel</h1>
 
-<figure>
-   <img class="einzeldessert" src="../../assets/images/mango-kokos-kugel.png" alt="Mango-Kokos-Kugel">
+<figure class="fig30">
+   <img src="../../assets/images/mango-kokos-kugel.png" alt="Mango-Kokos-Kugel">
    <figcaption>Mango-Kokos-Kugel</figcaption>
 </figure>
 

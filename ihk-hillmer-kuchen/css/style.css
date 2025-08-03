@@ -28,7 +28,7 @@ body.dark {
 /* Anwendung auf body */
 body {
     color: var(--text);
-    font-family: "LibertinusSans";
+    font-family: "LibertinusSans";   
 }
 
 
@@ -264,13 +264,17 @@ textarea {
 
 /* Gestaltung Bilder mit Unterschrift */
 /* Hinweis: Bei Änderung Seite hard neuladen mit STRG + F5 */
-.dessertvariation{
+figure.fig90 {
+    width: 90%;
+}
+figure.fig30 {
+    width: 30%;
+}
+img { /* 100% der Breite vom Container figure einnehmen, dadurch geht figcaption nicht über Bild hinaus. */
     width: 100%;
     height: auto;
-}
-figure.einzeldessert { /* figure-Element mit Klasse einzeldessert, ansonsten geht figcaption über Bild hinaus */
-    width: 50%;
-    height: auto;
+    vertical-align: bottom;
+    background-color: var(--bgs);
 }
 figcaption {
    background: var(--bga-tran);
@@ -286,8 +290,4 @@ figcaption {
 figure {
    position: relative;
    display: inline-block;
-}
-img {
-   vertical-align: bottom;
-   background-color: var(--bgs);
 }

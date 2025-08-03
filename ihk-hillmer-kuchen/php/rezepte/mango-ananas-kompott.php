@@ -17,8 +17,8 @@ Nach 2min Vanilleschoten entfernen;
 Obstwürfel und Malibu hinzufügen;
 1h mit Frischhaltefolie bedeckt kühlen");
 $kcal = 640;
-$eiweiss = 141.7;
-$kohlenhydrate = 2.7;
+$eiweiss = 2.7;
+$kohlenhydrate = 141.7;
 $fett = 1.4;
 $tfoot = erstelleKalorien($kcal, $eiweiss, $kohlenhydrate, $fett);
 echo erstelleTabelleRezept($rezeptname, $schritte, $tfoot, $obst, $gemuese, $getreide, $tierisches, $sonstiges)

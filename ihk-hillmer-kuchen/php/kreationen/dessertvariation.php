@@ -5,8 +5,8 @@ include '../includes/grund-start.inc.php';
 ?>
 <h1>Dessertvariation</h1>
 
-<figure>
-   <img class="dessertvariation" src="../../assets/images/dessertvariation.png" alt="Dessertvariation">
+<figure class="fig90">
+   <img src="../../assets/images/dessertvariation.png" alt="Dessertvariation">
    <figcaption>Dessertvariation</figcaption>
 </figure>
 

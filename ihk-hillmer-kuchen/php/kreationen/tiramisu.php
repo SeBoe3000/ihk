@@ -5,8 +5,8 @@ include '../includes/grund-start.inc.php';
 ?>
 <h1>Tiramisu</h1>
 
-<figure>
-   <img class="einzeldessert" src="../../assets/images/tiramisu.png" alt="Tiramisu">
+<figure class="fig30">
+   <img src="../../assets/images/tiramisu.png" alt="Tiramisu">
    <figcaption>Tiramisu</figcaption>
 </figure>
 

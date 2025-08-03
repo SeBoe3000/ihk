@@ -3,7 +3,7 @@ include_once __DIR__ . '/../includes/funktionen.php';
 ?>
 
 <?php
-$rezeptname = "Bisquitboden";
+$rezeptname = "Biskuitboden";
 $obst = "";
 $gemuese = "";
 $getreide = erstelleListeRezept('ul', "220g Zucker; 280g Mehl");
