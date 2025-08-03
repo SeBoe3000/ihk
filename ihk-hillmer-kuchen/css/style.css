@@ -72,6 +72,7 @@ html, body {
 header {
     position: sticky;
     top: 0;
+    z-index: 100; /* Stapelreihenfolge, damit Navigation im Header über Bildern ist */
 }
 
 
@@ -288,4 +289,5 @@ figure {
 }
 img {
    vertical-align: bottom;
+   background-color: var(--bgs);
 }
