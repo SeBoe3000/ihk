@@ -1,7 +1,7 @@
 HTML
 Seitenstrukturierung
 - header, nav, footer --> ok
-- main, article, section --> article noch verwenden.
+- main, article, section --> article noch verwenden _____
 - aside --> ok
 
 Überschriften
@@ -9,9 +9,9 @@ Seitenstrukturierung
 - h2, h3 --> ok
 
 Textstruktur
-- p, pre
-- figure, figcaption -->
-- hr, br 
+- p, pre  --> _____
+- figure, figcaption --> ok
+- hr, br   --> _____
 - div --> ok
 
 Listen
@@ -20,12 +20,12 @@ Listen
 
 Textauszeichnung
 - a --> ok
-- em, strong
-- span
+- em, strong  --> _____
+- span  --> _____
 
 Text
-- blockquote
-- abbr
+- blockquote  --> _____
+- abbr  --> _____
 
 Tabelle
 - table, thead, tbody, tfoot --> ok
@@ -35,7 +35,7 @@ Tabelle
 Multimedia und Grafiken
 - img --> ok
 - svg, iframe --> ok
-- audio, video, source
+- audio, video, source --> _____
 
 Formulare
 - form --> ok
@@ -45,7 +45,7 @@ Formulare
 - button --> ok
 
 Interaktiv
-- details, summary
+- details, summary  --> _____
 
 
 
@@ -54,10 +54,10 @@ Selektoren
 - Elementselektor --> ok, z.B. body / header, footer
 - Klassenselektor --> ok, z.B. .rezept / .grid
 - ID-Selektor --> ok, z.B. #back
-- Attributselektor 
-- Pseudoklasse (mind. 2 Arten) --> ok, z.B. footer nav li:hover / a:hover
-- Pseudoelemente (mind. 2 Arten) --> input::placeholder, textarea::placeholder / einer fehlt noch _____
-- Kombinator (mind. 3 Arten) --> z.B. Nachfahre: footer nav li / zwei weitere fehlen noch _____
+- Attributselektor --> ok, z.B. [required] in label:has(+ input[required])::after
+- Pseudoklasse (mind. 2 Arten) --> ok, z.B. footer nav li:hover / :has() in label:has(+ input[required])::after / input:focus
+- Pseudoelemente (mind. 2 Arten) --> ok, input::placeholder / ::after in label:has(+ input[required])::after
+- Kombinator (mind. 3 Arten) --> ok, z.B. Nachfahre: footer nav li / Geschwister: label:has(+ input[required])::after / Nachfahre: figure > img
 
 Positionierung
 - relative --> ok
@@ -83,19 +83,19 @@ PHP
 
 Eindruck
 Inhaltliches
-- Sinnvoller Text und sinnvoller Aufbau der Webseite
+- Sinnvoller Text und sinnvoller Aufbau der Webseite  --> _____
   (Kein Blindtext | Zum Thema passende Texte | Footer und Datenschutz vorhanden) 
 
 Layout
-- Einheitliches Layout (nicht von Seite zu Seite anders) 
-- Bündige Linien, alles sichtbar bei 100% 
-- Impressum und Datenschutz im Footer (nicht Header) --> ok (Nachfrage: muss Kontakt auch im Footer sein?)
+- Einheitliches Layout (nicht von Seite zu Seite anders)  --> _____
+- Bündige Linien, alles sichtbar bei 100%  --> ok, bündige Linien durch "border-collapse: collapse;"
+- Impressum und Datenschutz im Footer (nicht Header) --> ok (Nachfrage: muss Kontakt auch im Footer sein?) _____
 
 Benutzeroberfläche
 - Logo mit Verknüpfung zur Startseite --> ok
-- Einheitliche Beschriftungen und nachvollziehbare Navigation 
-- Pflichtfelder hervorgehoben (z.B. durch *) 
-- Funktionale Labels bei Eingabefeldern
+- Einheitliche Beschriftungen und nachvollziehbare Navigation --> ok
+- Pflichtfelder hervorgehoben (z.B. durch *) --> ok
+- Funktionale Labels bei Eingabefeldern --> ok
   (Klick auf Text soll z.B. Checkbox aktivieren oder zu Eingabefeld führen) 
 
 
