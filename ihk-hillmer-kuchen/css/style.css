@@ -204,6 +204,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
+section a::after {
+    content: "\01F517";
+}
 
 
 
