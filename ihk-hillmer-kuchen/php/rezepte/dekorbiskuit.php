@@ -1,8 +1,6 @@
 <?php
 include_once __DIR__ . '/../includes/funktionen.php';
-?>
 
-<?php
 $rezeptname = "Dekorbiskuit";
 $obst = "";
 $gemuese = "";
@@ -14,7 +12,7 @@ Eiweiß und danach Mehl einrühren;
 Ggf. einfärben;
 In Reliefmatte verstreichen;
 Ggf. kurz anbacken oder einfrieren;
-Masse ".'<a href="php/rezepte/biskuitrolle.php">Biskuitrolle</a>'." darüber geben"); /* TODO: anderer Link angeben */
+Masse " . '<a href="' . $relPath . 'php/rezepte/biskuitrolle-link.php">Biskuitrolle</a>' . " darüber geben");
 $kcal = 270;
 $eiweiss = 3.6;
 $kohlenhydrate = 30.7;
@@ -22,5 +20,3 @@ $fett = 14.5;
 $tfoot = erstelleKalorien($kcal, $eiweiss, $kohlenhydrate, $fett);
 echo erstelleTabelleRezept($rezeptname, $schritte, $tfoot, $obst, $gemuese, $getreide, $tierisches, $sonstiges)
 ?>
-
-	

@@ -1,8 +1,6 @@
-<?php
+<?php 
 include_once __DIR__ . '/../includes/funktionen.php';
-?>
 
-<?php
 $rezeptname = "Limetten-Baba";
 $obst = erstelleListeRezept('ul', "Schale einer Limette");
 $gemuese = "";

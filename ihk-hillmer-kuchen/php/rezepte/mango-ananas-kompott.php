@@ -1,8 +1,6 @@
-<?php
-include_once __DIR__ . '/../includes/funktionen.php';
-?>
+<?php 
+include_once __DIR__ . '/../includes/funktionen.php'; 
 
-<?php
 $rezeptname = "Mango-Ananas-Kompott";
 $obst = erstelleListeRezept('ul', "200g frische Ananas; 200g frische Mango");
 $gemuese = "";

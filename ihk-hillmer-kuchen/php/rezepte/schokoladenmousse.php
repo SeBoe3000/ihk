@@ -1,8 +1,6 @@
 <?php
-include_once __DIR__ . '/../includes/funktionen.php';
-?>
+include_once __DIR__ . '/../includes/funktionen.php'; 
 
-<?php
 $rezeptname = "Schokoladenmousse";
 $obst = "";
 $gemuese = "";

@@ -1,8 +1,6 @@
 <?php
 include_once __DIR__ . '/../includes/funktionen.php';
-?>
 
-<?php
 $rezeptname = "Biskuitboden";
 $obst = "";
 $gemuese = "";
@@ -19,5 +17,3 @@ $fett = 35;
 $tfoot = erstelleKalorien($kcal, $eiweiss, $kohlenhydrate, $fett);
 echo erstelleTabelleRezept($rezeptname, $schritte, $tfoot, $obst, $gemuese, $getreide, $tierisches, $sonstiges)
 ?>
-
-

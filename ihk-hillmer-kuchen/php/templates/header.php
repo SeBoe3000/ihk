@@ -1,7 +1,3 @@
-<?php
-include_once __DIR__ . '/../includes/funktionen.php';
-?>
-
 <header>
     <nav>
         <ul>

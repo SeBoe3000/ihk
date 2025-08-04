@@ -1,9 +1,7 @@
 <?php
 include_once __DIR__ . '/../includes/funktionen.php';
-?>
 
-<?php
-$rezeptname = "Bisquitrolle";
+$rezeptname = "Biskuitrolle";
 $obst = "";
 $gemuese = "";
 $getreide = erstelleListeRezept('ul', "120g Zucker; 100g Mehl");

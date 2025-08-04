@@ -42,7 +42,6 @@ function erstelleKalorien($kalorien, $protein, $kohlenhydrate,$fett){
     return $html;
 }
 
-
 // Rezepttabelle erstellen
 function erstelleTabelleRezept($rezeptname, $schritte, $tfoot, $zutaten1, $zutaten2, $zutaten3, $zutaten4, $zutaten5) {
     $html = "<div class=\"table-wrapper\">

@@ -1,8 +1,6 @@
 <?php
 include_once __DIR__ . '/../includes/funktionen.php';
-?>
 
-<?php
 $rezeptname = "Apfel-Grieß-Pancakes";
 $obst = erstelleListeRezept('ul', "1 Apfel (oder 150g Apfelmark)");
 $gemuese = "";

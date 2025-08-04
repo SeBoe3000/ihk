@@ -7,7 +7,8 @@ include 'php/includes/grund-start.inc.php';
 <h1>Herzlich Willkommen</h1>
 
 <p>
-    Beim Backen kann ich mich kreativ ausleben und dabei meine Liebsten mit Süßem verwöhnen. Hier möchte ich meine liebsten Rezepte und Kreationen mit Euch teilen.<br>
+    Beim Backen kann ich mich kreativ ausleben und dabei meine Liebsten mit Süßem verwöhnen.
+    Hier möchte ich meine liebsten Rezepte und Kreationen mit Euch teilen.<br>
     Sobald das vertraute <strong>Ticken der Eieruhr</strong> ertönt, weiß ich: Jetzt beginnt die schönste Zeit des Tages.<br>
     <em>Klicke, um das vertraute Ticken zu hören:</em>
     <audio controls title="Eieruhr">
@@ -17,15 +18,16 @@ include 'php/includes/grund-start.inc.php';
 </p>
 
 <p>
-    Folgendes Motto begleitet mich durch jede Teigschicht. Ob knusprige Tartes, luftige Torten oder süße Kleinigkeiten – für mich ist Backen Glück in jeder Form.
+    Folgendes Motto begleitet mich durch jede Teigschicht.
+    Ob knusprige Tartes, luftige Torten oder süße Kleinigkeiten – für mich ist Backen Glück in jeder Form.
 </p>
 
-<blockquote>
-    "Kein Kuchen ist auch keine Lösung. Viel Kuchen aber schon."
-</blockquote>
+<blockquote>"Kein Kuchen ist auch keine Lösung. Viel Kuchen aber schon."</blockquote>
 
 <p>
-    Neugierig geworden? Hier geht es zu meinen <a href="php/kreationen.php">Kreationen</a> und <a href="php/uebersicht.php">liebsten Rezepten</a>.<br>
+    Neugierig geworden?
+    Hier geht es zu meinen <a href="php/kreationen.php">Kreationen</a> und
+    <a href="php/uebersicht.php">liebsten Rezepten</a>.<br>
 </p>
 
 <p>
@@ -39,7 +41,14 @@ include 'php/includes/grund-start.inc.php';
 <hr>
 
 <h2>Verwendete Mengeneinheiten</h2>
-In den Rezepten werden die Mengeneinheiten <abbr title="Gramm">g</abbr>, <abbr title="Teelöffel">TL</abbr>, <abbr title="Esslöffel">EL</abbr> und <abbr title="Milliliter">ml</abbr> verwendet.
+
+<p>
+    In den Rezepten werden die Mengeneinheiten <abbr title="Gramm">g</abbr>,
+    <abbr title="Teelöffel">TL</abbr>,
+    <abbr title="Esslöffel">EL</abbr> und
+    <abbr title="Milliliter">ml</abbr> verwendet.
+</p>
+
 <details>
     <summary>Umrechnungen</summary>
     <ul>
@@ -50,6 +59,7 @@ In den Rezepten werden die Mengeneinheiten <abbr title="Gramm">g</abbr>, <abbr t
 </details>
 
 <h2>Backtipps für den perfekten Kuchen</h2>
+
 <pre>
 - Zutaten immer abwiegen, nicht schätzen
 - Butter und Eier rechtzeitig temperieren
@@ -59,8 +69,4 @@ In den Rezepten werden die Mengeneinheiten <abbr title="Gramm">g</abbr>, <abbr t
 - Kuchen gut auskühlen lassen
 </pre>
 
-
-<?php
-$relPath = '';
-include("php/includes/grund-ende.inc.php");
-?>
+<?php include("php/includes/grund-ende.inc.php"); ?>

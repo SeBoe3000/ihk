@@ -1,8 +1,6 @@
 <?php
 include_once __DIR__ . '/../includes/funktionen.php';
-?>
 
-<?php
 $rezeptname = "Kirschfüllung";
 $obst = erstelleListeRezept('ul', "1 Glas Sauerkirschen; 250ml Kirschsaft");
 $gemuese = "";

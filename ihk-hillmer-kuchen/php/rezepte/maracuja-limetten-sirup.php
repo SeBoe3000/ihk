@@ -1,8 +1,6 @@
-<?php
-include_once __DIR__ . '/../includes/funktionen.php';
-?>
+<?php 
+include_once __DIR__ . '/../includes/funktionen.php'; 
 
-<?php
 $rezeptname = "Maracuja-Limetten-Sirup";
 $obst = erstelleListeRezept('ul', "Schale einer Limette");
 $gemuese = "";

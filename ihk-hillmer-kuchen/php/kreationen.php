@@ -6,7 +6,7 @@ include 'includes/grund-start.inc.php';
 
 <h1>Meine Kreationen</h1>
 
-Hallo zusammen, ich möchte Euch hier meine Kreationen vorstellen:
+<p>Hallo zusammen, ich möchte Euch hier meine Kreationen vorstellen:</p>
 
 <dl>
     <dt><a href="kreationen/dessertvariation.php">Dessertvariation</a></dt>

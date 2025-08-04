@@ -1,8 +1,6 @@
-<?php
+<?php 
 include_once __DIR__ . '/../includes/funktionen.php';
-?>
 
-<?php
 $rezeptname = "Kokossahne";
 $obst = "";
 $gemuese = "";

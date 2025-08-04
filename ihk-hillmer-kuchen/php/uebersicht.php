@@ -3,9 +3,11 @@ $siteName = "Übersicht";
 $relPath = '../';
 include 'includes/grund-start.inc.php';
 ?>
+
 <h1>Rezeptübersicht</h1>
 
 <h2>Grundteige</h2>
+
 <h3>Biskuit</h3>
 <?php include("rezepte/biskuitboden.php"); ?> <br>
 <?php include("rezepte/biskuitrolle.php"); ?> <br>
@@ -18,6 +20,7 @@ include 'includes/grund-start.inc.php';
 <?php include("rezepte/limetten-baba.php"); ?> <br>
 
 <h2>Füllungen</h2>
+
 <h3>Fruchtfüllungen</h3>
 <?php include("rezepte/kirschfüllung.php"); ?> <br>
 <?php include("rezepte/mango-ananas-kompott.php"); ?> <br>
