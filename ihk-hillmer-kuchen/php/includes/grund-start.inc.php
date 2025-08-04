@@ -22,6 +22,6 @@ $darkClass = ($mode === 'dark') ? 'dark' : '';
     <a id="top"></a> <!-- Sprungmarke für Zurückbutton -->
     <?php include("$relPath"."php/templates/header.php"); ?>
     <main>
-        <aside><?php include("$relPath"."php/templates/aside.php"); ?></aside>
+        <?php include("$relPath"."php/templates/aside.php"); ?>
         <section>
         

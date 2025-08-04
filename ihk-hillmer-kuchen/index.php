@@ -4,13 +4,20 @@ $relPath = '';
 include 'php/includes/grund-start.inc.php';
 ?>
 
-
 <section>
-zum Testen Anfang <br>
-<a href="php/datenschutz.php">Datenschutz aus Footer direkt öffnen</a> <br>
-<a href="php/unterseiten/test.php">Unterseite öffnen und hier Footer</a> <br>
-<?php include("php/templates/footer.php"); ?> <br>
-zum Testen Ende <br> <br>
+
+
+<audio controls title="Eieruhr" >
+   <source src="assets/audio/eieruhr.mp3"> <!-- Pixabay - Fronbondi_Skegs -->
+   <source src="assets/audio/eieruhr2.mp3"> <!-- Pixabay - freesound_community -->
+</audio>
+
+<video controls title = "Croissant" poster="assets/images/croissant.png">
+   <source src="assets/videos/croissant.mp4"> <!-- Pixabay - grandmusicevents -->
+   <source src="assets/videos/apfelstrudel.mp4"> <!-- Pixabay - Kaffeesüchtig -->
+</video>
+
+
 
 <a href="php/kreationen/schoko-kirsch-toertchen-mit-strukturbiskuit.php">Schoko-Kirsch Törtchen mit Strukturbiskuit</a> <br>
 <a href="php/kreationen/dessertvariation.php">Dessertvariation</a> <br>

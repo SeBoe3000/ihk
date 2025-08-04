@@ -302,6 +302,15 @@ figure {
 }
 
 
+
+/* Video */
+video  {
+    width: 30%;
+    height: auto;
+
+}
+
+
 /* Icon für Startseite in Header */
 .icon {
     width: 32px;
