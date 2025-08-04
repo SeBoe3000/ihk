@@ -3,14 +3,14 @@ $siteName = "Tiramisu";
 $relPath = '../../';
 include '../includes/grund-start.inc.php';
 ?>
-<h1>Tiramisu</h1>
+<article>
+   <h1>Tiramisu</h1>
+   <figure class="fig30">
+      <img src="../../assets/images/tiramisu.png" alt="Tiramisu">
+      <figcaption>Tiramisu</figcaption>
+   </figure>
 
-<figure class="fig30">
-   <img src="../../assets/images/tiramisu.png" alt="Tiramisu">
-   <figcaption>Tiramisu</figcaption>
-</figure>
-
-<pre>Zutaten:
+   <pre>Zutaten:
 -	1x Biskuitboden
 -   1x Mascarpone-Sahnecreme
 
@@ -19,13 +19,15 @@ Zusammensetzung:
 -   Mascarpone-Sahnecreme darüber verstreichen
 -   Kakaopulver drüber sieben
 -   Optional: mit Schokoladenchip aus temparierter Schokolade dekorieren
-
 </pre>
+</article>
 
-<h2>Rezepte</h2>
-<h3>Biskuitboden</h3>
-<?php include("../rezepte/biskuitboden.php"); ?> <br>
-<h3>Mascarpone-Sahnecreme</h3>
-<?php include("../rezepte/mascarpone-sahnecreme.php"); ?> <br>
+<article>
+   <h2>Rezepte</h2>
+   <h3>Biskuitboden</h3>
+   <?php include("../rezepte/biskuitboden.php"); ?> <br>
+   <h3>Mascarpone-Sahnecreme</h3>
+   <?php include("../rezepte/mascarpone-sahnecreme.php"); ?> <br>
+</article>
 
 <?php include("../includes/grund-ende.inc.php"); ?>

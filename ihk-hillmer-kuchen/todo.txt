@@ -1,7 +1,7 @@
 HTML
 Seitenstrukturierung
 - header, nav, footer --> ok
-- main, article, section --> article noch verwenden _____
+- main, article, section --> ok _____ article in CSS nutzen
 - aside --> ok
 
 Überschriften
@@ -9,9 +9,9 @@ Seitenstrukturierung
 - h2, h3 --> ok
 
 Textstruktur
-- p, pre  --> _____
+- p, pre  --> ok
 - figure, figcaption --> ok
-- hr, br   --> _____
+- hr, br   --> ok
 - div --> ok
 
 Listen
@@ -20,12 +20,12 @@ Listen
 
 Textauszeichnung
 - a --> ok
-- em, strong  --> _____
+- em, strong  --> ok
 - span  --> _____
 
 Text
-- blockquote  --> _____
-- abbr  --> _____
+- blockquote  --> ok
+- abbr  --> ok
 
 Tabelle
 - table, thead, tbody, tfoot --> ok
@@ -45,7 +45,7 @@ Formulare
 - button --> ok
 
 Interaktiv
-- details, summary  --> _____
+- details, summary  --> ok
 
 
 

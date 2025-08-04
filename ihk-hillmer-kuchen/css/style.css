@@ -26,7 +26,7 @@ body.dark {
     --bga-tran: rgba(var(--bga-rgb), 0.5); /* Hintergrund accent mit Transparenz */
 }
 /* Anwendung auf body */
-body {
+body, pre {
     color: var(--text);
     font-family: "LibertinusSans";   
 }
@@ -303,12 +303,26 @@ figure {
 
 
 
-/* Video */
+/* Gestaltung Video und Audio */
 video  {
     width: 30%;
     height: auto;
-
 }
+audio {
+    height: 16px;
+    /* über controls aktivierte Bedienelemente sind vom Browser vorgegeben und können nicht angepasst werden */
+}
+
+
+
+/* Gestaltung hr */
+hr {
+  border: none;
+  height: 4px;
+  background: linear-gradient(to right, var(--bgs), var(--bga), var(--bgs));
+  border-radius: 2px;
+}
+
 
 
 /* Icon für Startseite in Header */
