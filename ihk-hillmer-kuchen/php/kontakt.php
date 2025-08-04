@@ -9,6 +9,7 @@ $formularAbgeschickt = ($_SERVER["REQUEST_METHOD"] === "POST");
 ?>
 
 <?php if (!$formularAbgeschickt): ?>
+    <h1>Kontakt</h1>
     <p>Zur Kontaktaufnahme, füllen Sie bitte folgendes Formular aus:</p>
     <form class="form-container" method="post">
         <div class="form-group">

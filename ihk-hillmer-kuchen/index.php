@@ -4,7 +4,7 @@ $relPath = '';
 include 'php/includes/grund-start.inc.php';
 ?>
 
-<section>
+<h1>Herzlich Willkommen</h1>
 
 
 <audio controls title="Eieruhr" >
@@ -25,7 +25,7 @@ include 'php/includes/grund-start.inc.php';
 <?php include("php/rezepte/apfel-grieß-pancakes.php"); ?> <br>
 <?php include("php/rezepte/apfel-grieß-pancakes.php"); ?> <br>
 <?php include("php/rezepte/dekorbiskuit.php"); ?> <br>
-</section>
+
 
 <?php
 $relPath = '';

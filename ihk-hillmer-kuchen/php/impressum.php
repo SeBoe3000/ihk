@@ -3,6 +3,7 @@ $siteName = "Impresum";
 $relPath = '../';
 include 'includes/grund-start.inc.php';
 ?>
+<h1>Impresum</h1>
 Angaben gemäß § 5 TMG:
 Max Mustermann
 Musterstraße 1
