@@ -19,10 +19,13 @@ include 'includes/grund-start.inc.php';
 <h3>Hefeteig</h3>
 <?php include("rezepte/limetten-baba.php"); ?> <br>
 
+<h3>Croissant</h3>
+<?php include("rezepte/croissant.php"); ?> <br>
+
 <h2>Füllungen</h2>
 
 <h3>Fruchtfüllungen</h3>
-<?php include("rezepte/kirschfüllung.php"); ?> <br>
+<?php include("rezepte/kirschfuellung.php"); ?> <br>
 <?php include("rezepte/mango-ananas-kompott.php"); ?> <br>
 <?php include("rezepte/maracuja-limetten-sirup.php"); ?> <br>
 
@@ -32,6 +35,9 @@ include 'includes/grund-start.inc.php';
 <h3>Cremes</h3>
 <?php include("rezepte/kokossahne.php"); ?> <br>
 <?php include("rezepte/mascarpone-sahnecreme.php"); ?> <br>
+
+<h2>Kleines Gebäck</h2>
+<?php include("rezepte/schneckennudeln.php"); ?> <br>
 
 <h2>Pancakes</h2>
 <?php include("rezepte/apfel-grieß-pancakes.php"); ?> <br>

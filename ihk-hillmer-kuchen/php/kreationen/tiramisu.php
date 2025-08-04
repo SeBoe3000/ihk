@@ -4,9 +4,9 @@ $relPath = '../../';
 include '../includes/grund-start.inc.php';
 ?>
 
-<article>
-   <h1>Tiramisu</h1>
+<h1>Tiramisu</h1>
 
+<article>
    <figure class="fig30">
       <img src="../../assets/images/tiramisu.png" alt="Tiramisu">
       <figcaption>Tiramisu</figcaption>

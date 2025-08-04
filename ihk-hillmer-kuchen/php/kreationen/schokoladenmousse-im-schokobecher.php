@@ -4,9 +4,9 @@ $relPath = '../../';
 include '../includes/grund-start.inc.php';
 ?>
 
-<article>
-   <h1>Schokoladenmousse im Schokobecher</h1>
+<h1>Schokoladenmousse im Schokobecher</h1>
 
+<article>
    <figure class="fig30">
       <img src="../../assets/images/schokoladenmousse-im-schokobecher.png" alt="Schokoladenmousse im Schokobecher">
       <figcaption>Schokoladenmousse im Schokobecher</figcaption>

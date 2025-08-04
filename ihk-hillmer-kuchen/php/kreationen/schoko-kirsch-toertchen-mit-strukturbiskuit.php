@@ -4,9 +4,9 @@ $relPath = '../../';
 include '../includes/grund-start.inc.php';
 ?>
 
-<article>
-   <h1>Schoko-Kirsch Törtchen mit Strukturbiskuit</h1>
+<h1>Schoko-Kirsch Törtchen mit Strukturbiskuit</h1>
 
+<article>
    <figure class="fig30">
       <img src="../../assets/images/schoko-kirsch-toertchen-mit-strukturbiskuit.png" alt="Schoko-Kirsch-Törtchen mit Strukturbiskuit">
       <figcaption>Schoko-Kirsch-Törtchen mit Strukturbiskuit</figcaption>
@@ -37,7 +37,7 @@ Zusammensetzung:
    <?php include("../rezepte/brownie.php"); ?> <br>
 
    <h3>Kirschfüllung</h3>
-   <?php include("../rezepte/kirschfüllung.php"); ?> <br>
+   <?php include("../rezepte/kirschfuellung.php"); ?> <br>
 
    <h3>Mascarpone-Sahnecreme</h3>
    <?php include("../rezepte/mascarpone-sahnecreme.php"); ?> <br>
