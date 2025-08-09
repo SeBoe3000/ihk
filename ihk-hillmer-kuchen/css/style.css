@@ -1,7 +1,7 @@
 /* Schriftart einbinden*/
 @font-face {
    font-family: "LibertinusSans";
-   src: url("../assets/fonts/LibertinusSans-Regular.ttf");
+   src: url("../assets/fonts/libertinus-sans-regular.ttf");
 }
 
 /* Standardfarben Light und Dark Mode */
@@ -74,6 +74,9 @@ header {
     top: 0;
     z-index: 100; /* Stapelreihenfolge, damit Navigation im Header über Bildern ist */
 }
+footer {
+    z-index: 100; /* Stapelreihenfolge, damit Footer über Iframe ist */
+}
 
 
 
@@ -81,15 +84,18 @@ header {
 header nav li, footer nav li {
    background: var(--bga);
    display: inline-block;
-   padding: 5px;
+   padding: 10px;
    margin-right: 20px;
+   height: 22px; /* damit Icon und Text auf einer Höhe sind */
 }
 header ul, footer ul {
    padding-left: 0px;
+   margin: 0px;
 }
 header nav a, footer nav a{
    color: var(--text);
    text-decoration: none;
+   white-space: nowrap;         /* Verhindert Zeilenumbrüche in Links */
 }
 header nav li:hover, footer nav li:hover{
    background: var(--bgs);
@@ -108,13 +114,41 @@ header .dropdown-content {
 }
 header .dropdown-content li {
    display: block;
+   margin: 0px; /* ansonsten bei Anordnung seitlich links Abstand 20px rechts zwischen Ebenen  */
+   padding: 5px;
 }
 header .dropdown {
    position: relative;
 }
-header .dropdown:hover .dropdown-content {
-   display: block;
+/* "display: block;" in "header .dropdown:hover .dropdown-content" überflüssig, da Steuerung in erster & weiteren Ebenen */
+ 
+/* Mehrstufiges Dropdown-Menü */
+/* Untermenüs immer verstecken */
+header nav ul ul {
+    display: none ;
 }
+/* Position erste Dropdown-Ebene (unter dem Eltern-Li) */
+header nav > ul > li:hover > ul {
+    display: block;
+    top: 100%;
+    left: 0px;
+}
+/* Position weitere Dropdown-Ebenen (seitlich rechts öffnen) */
+header nav ul ul li:hover > ul {
+    display: block;
+    top: 0px;
+    left: 100%;
+}
+/* Position weitere Dropdown-Ebenen (seitlich links öffnen) */
+/*header nav ul ul ul li:hover > ul {
+    display: block;
+    top: 0px;
+    left: auto;
+    right: 100%;
+}*/
+/* Hinweis: dynamische Entscheidung, ob Ebene links oder rechts anhand vom Viewpoint geöffnet wird nur mit Javascript möglich.
+Abwechselnd links, rechts öffnen sorgt für Überlagerungen. Vertikale Menüs bei Mehrstufigkeit oft bessere Lösung.
+Da aktuell nur 3 Ebenen vorhanden passt die aktuelle Lösung auch. */
 
 
 
@@ -329,8 +363,11 @@ hr {
 
 
 /* Icon für Startseite in Header */
-.icon {
-    width: 32px;
-    padding: 0px;
+.icon {    
     vertical-align: middle; /* Ausrichtung Icon vertikal mittig zur Grundlinie (baseline) vom umgebenden Text */
+}
+
+.icon img {
+    width: 32px;
+    height: auto;
 }
