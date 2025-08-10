@@ -1,8 +1,102 @@
 <?php
+
+// Für Erstellung Links und Listen für "Kreationen" im Header und auf Unterseiten.
+
+// Kategorien als Links
+$dessertKategorie = createLink("kreationen-navigation", "Desserts");
+$kuchenKategorie = createLink("kreationen-navigation", "Kuchen");
+$gebaeckKategorie = createLink("kreationen-navigation", "Kleines Gebäck");
+
+// Rezeptvariablen als Links in Arrays sammeln
+$dessert = [
+    $dessertvariation = createLink("kreationen", "Dessertvariation"),
+    $tiramisu = createLink("kreationen", "Tiramisu",),
+    $mangoKokosKugel = createLink("kreationen", "Mango-Kokos-Kugel"),
+    $schokoKirschToertchen = createLink("kreationen", "Schoko-Kirsch Törtchen mit Strukturbiskuit"),
+    $schokoladenmousse = createLink("kreationen", "Schokoladenmousse im Schokobecher",)
+];
+$kuchen = [
+    $schwarzwaelder = createLink("kreationen", "Schwarzwälder"),
+];
+$gebaeck = [
+    $schneckennudeln = createLink("kreationen", "Schneckennudeln"),
+    $croissant = createLink("kreationen", "Croissant"),
+];
+
+// Name in Dateinamen umwandeln
+function dateiname($string) {
+    // Name abspeichern
+    $name = $string;
+    
+    // Alles in Kleinbuchstaben
+    $string = strtolower($string);
+
+    // Umlaute umwandeln
+    $umlaute = [
+        'ü' => 'ue',
+        'ä' => 'ae',
+        'ö' => 'oe',
+        'ß' => 'ss'
+    ];
+    $string = strtr($string, $umlaute);
+
+    // Leerzeichen in Bindestriche umwandeln
+    $string = str_replace(' ', '-', $string);
+
+    // Alle nicht erlaubten Zeichen entfernen
+    $string = preg_replace('/[^a-z0-9\-]/', '', $string);
+
+    // Keine mehrfachen Bindestriche
+    $string = preg_replace('/-+/', '-', $string);
+
+    // Bindestrich am Anfang/Ende entfernen
+    $string = trim($string, '-');
+
+    return $string;
+}
+
+// Link erstellen
+function createLink($ordner, $string) {
+    global $relPath; // Zugriff auf Variable außerhalb Funktion
+    $dateiname = dateiname($string) . ".php" ;
+    $link = '<a href="' . $relPath . 'php/' . $ordner . '/' . $dateiname . '">' . $string . '</a>';
+    return $link;
+}
+
+// Liste li oder dd erstellen anhand übergebenem Array von Rezeptlinks
+function createList(array $links, string $tag = 'li') {
+    // li nehmen, sofern nicht li oder dd
+    if ($tag !== 'li' && $tag !== 'dd') {
+        $tag = 'li';
+    }
+
+    $output = "";
+    foreach ($links as $link) {
+        $output .= "<$tag>$link</$tag>\n";
+    }
+    return $output;
+} 
+
+function createDropdown(string $kategorie, array $items) {
+    $output = '<li class="dropdown">' . $kategorie . "\n";
+    $output .= '  <ul class="dropdown-content">' . "\n";
+    $output .= createList($items, 'li');
+    $output .= '  </ul>' . "\n";
+    $output .= '</li>' . "\n";
+
+    return $output;
+}
+
+
+
+
 // Seitennamen ändern
 function getPageTitle($siteName = null) {
     return $siteName ?? 'Standardtitel';
 }
+
+
+
 
 // aktueller Modus ermitteln
 function getMode($mode){
@@ -12,6 +106,10 @@ function getMode($mode){
         return '<a href="?mode=dark">Dunkler Modus</a>';
     }
 }
+
+
+
+// Für Rezepttabelle
 
 // Listen für Rezept (Zutaten und Schritte) erstellen
 function erstelleListeRezept($listType = 'ul', $rezeptString) {
@@ -113,3 +211,5 @@ function erstelleTabelleRezept($rezeptname, $schritte, $tfoot, $zutaten1, $zutat
     
     return $html;
 }
+
+?>
