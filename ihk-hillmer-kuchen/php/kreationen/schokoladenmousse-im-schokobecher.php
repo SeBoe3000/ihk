@@ -9,13 +9,17 @@ include '../includes/grund-start.inc.php';
 <article>
    <?= createPic("Schokoladenmousse im Schokobecher", "fig30") ?>
 
-   <pre>Zutaten:
--	Schokoladenmousse
--   Schokoladenbecher
+   <br>
 
-xxx:
--	xxxx
-   </pre>
+   Zutaten:
+   <?= erstelleListeRezept('ul', "1x Schokoladenmousse;
+   6x Schokoladenbecher aus temparierter Schokolade"); ?>
+
+   Zusammensetzung:
+   <?= erstelleListeRezept('ul', "Schokoladenbecher mit etwas abgekühlter Schokoladenmousse füllen;
+   Optional: mit Schokoladenchip aus temparierter Schokolade dekorieren;
+   Über Nacht im Kühlschrank fest werden lassen"); ?>
+   
 </article>
 
 <article>

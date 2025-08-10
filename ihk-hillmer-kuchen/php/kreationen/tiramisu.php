@@ -9,16 +9,17 @@ include '../includes/grund-start.inc.php';
 <article>
    <?= createPic("Tiramisu", "fig30") ?>
 
-   <pre>Zutaten:
--	1x Biskuitboden
--   1x Mascarpone-Sahnecreme
+   <br>
 
-Zusammensetzung:
--	Biskuit in 8cm Dessertring backen, optional horizontal teilen
--   Mascarpone-Sahnecreme darüber verstreichen
--   Kakaopulver drüber sieben
--   Optional: mit Schokoladenchip aus temparierter Schokolade dekorieren
-   </pre>
+   Zutaten:
+   <?= erstelleListeRezept('ul', "1x Biskuitboden; 1x Mascarpone-Sahnecreme"); ?>
+
+   Zusammensetzung:
+   <?= erstelleListeRezept('ul', "Biskuit in 8cm Dessertring backen, optional horizontal teilen;
+   Mascarpone-Sahnecreme darüber verstreichen;
+   Kakaopulver drüber sieben;
+   Optional: mit Schokoladenchip aus temparierter Schokolade dekorieren"); ?>
+
 </article>
 
 <article>
