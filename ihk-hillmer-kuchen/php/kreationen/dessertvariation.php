@@ -14,9 +14,9 @@ include '../includes/grund-start.inc.php';
 <p>Die Dessertvariation besteht aus folgenden Desserts:</p>
 
 <ul>
-    <li><a href="tiramisu.php">Tiramisu</a></li>
-    <li><a href="mango-kokos-kugel.php">Mango-Kokos-Kugel</a></li>
-    <li><a href="schoko-kirsch-toertchen-mit-strukturbiskuit.php">Schoko-Kirsch Törtchen mit Strukturbiskuit</a></li>
+    <li><?= createLink("kreationen", "Tiramisu",) ?></li>
+    <li><?= createLink("kreationen", "Mango-Kokos-Kugel",) ?></li>
+    <li><?= createLink("kreationen", "Schoko-Kirsch Törtchen mit Strukturbiskuit",) ?></li>
 </ul>
 
 <?php include("../includes/grund-ende.inc.php"); ?>
