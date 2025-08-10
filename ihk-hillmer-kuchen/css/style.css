@@ -371,3 +371,37 @@ hr {
     width: 32px;
     height: auto;
 }
+
+
+
+/* Gestaltung Article mit Bild und Text daneben */
+article.start {
+  display: flex;
+  flex-wrap: wrap;      /* Umbruch wenn Platz zu wenig */
+  gap: 1em;             /* Abstand zwischen Boxen */
+  align-items: flex-start;  /* Ausrichtung am oberen Rand Container. Ansonsten ist figcaption bei viel Text zu weit unten. */
+}
+article.start img {
+  flex: 0 0 auto;       /* Kein wachsen oder schrumpfen */
+  max-width: 300px;     /* Maximale Breite Bild */
+  width: 100%;          /* Volle Breite ausfüllen innerhalb max-width */
+}
+article.start figure {
+  margin: 0;
+  padding: 0;
+  margin-left: 40px;    /* Abstand nur links einfügen */
+}
+article.start .text {
+  flex: 1 1 200px;      /* Wachsen und Schrumpfen mit Grundbreite min 200px */
+}
+article.start > h2 {
+  flex: 0 0 100%;     /* nicht wachsen, nicht schrumpfen, 100% Breite */
+  margin: 0px;
+}
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 HTML
 Seitenstrukturierung
 - header, nav, footer --> ok
-- main, article, section --> ok _____ article in CSS nutzen
+- main, article, section --> ok
 - aside --> ok
 
 Überschriften

@@ -6,20 +6,20 @@ include '../includes/grund-start.inc.php';
 
 <h1>Tiramisu</h1>
 
-<article>
-   <?= createPic("Tiramisu", "fig30") ?>
+<article class="start">
+   <h2>Zubereitung und Zutaten</h2>
+   <?= createPic("Tiramisu", "") ?>
+   
+   <div class="text">
+      Zutaten:
+      <?= erstelleListeRezept('ul', "1x Biskuitboden; 1x Mascarpone-Sahnecreme"); ?>
 
-   <br>
-
-   Zutaten:
-   <?= erstelleListeRezept('ul', "1x Biskuitboden; 1x Mascarpone-Sahnecreme"); ?>
-
-   Zusammensetzung:
-   <?= erstelleListeRezept('ul', "Biskuit in 8cm Dessertring backen, optional horizontal teilen;
-   Mascarpone-Sahnecreme darüber verstreichen;
-   Kakaopulver drüber sieben;
-   Optional: mit Schokoladenchip aus temparierter Schokolade dekorieren"); ?>
-
+      Zusammensetzung:
+      <?= erstelleListeRezept('ul', "Biskuit in 8cm Dessertring backen, optional horizontal teilen;
+      Mascarpone-Sahnecreme darüber verstreichen;
+      Kakaopulver drüber sieben;
+      Optional: mit Schokoladenchip aus temparierter Schokolade dekorieren"); ?>
+   </div>
 </article>
 
 <article>

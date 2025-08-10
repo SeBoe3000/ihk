@@ -6,23 +6,23 @@ include '../includes/grund-start.inc.php';
 
 <h1>Schwarzwälder</h1>
 
-<article>
-   <?= createPic("Schwarzwälder", "fig30") ?>
+<article class="start">
+   <h2>Zubereitung und Zutaten</h2>
+   <?= createPic("Schwarzwälder", "") ?>
 
-   <br>
+   <div class="text">
+      Zutaten:
+      <?= erstelleListeRezept('ul', "1x Biskuitboden;
+      1x Kischfüllung;
+      600-800ml aufgeschlagene Sahne;
+      Optional: etwas Kirschwasser"); ?>
 
-   Zutaten:
-   <?= erstelleListeRezept('ul', "1x Biskuitboden;
-   1x Kischfüllung;
-   600-800ml aufgeschlagene Sahne;
-   Optional: etwas Kirschwasser"); ?>
-
-   Zusammensetzung:
-   <?= erstelleListeRezept('ul', "Biskuitboden in 3 Teile horiontal teilen;
-   Optional: Böden mit Kirschwasser tränken, Kirschwasser in Sahne und Kirschfüllung einarbeiten;
-   Kirschfüllung mit mindestens 1cm Abstand zum Rand auf zwei der drei Böden verteilen;
-   Mit Sahne eintreichen und mit Schokostreuseln dekorieren"); ?>
-   
+      Zusammensetzung:
+      <?= erstelleListeRezept('ul', "Biskuitboden in 3 Teile horiontal teilen;
+      Optional: Böden mit Kirschwasser tränken, Kirschwasser in Sahne und Kirschfüllung einarbeiten;
+      Kirschfüllung mit mindestens 1cm Abstand zum Rand auf zwei der drei Böden verteilen;
+      Mit Sahne eintreichen und mit Schokostreuseln dekorieren"); ?>
+   </div>
 </article>
 
 <article>

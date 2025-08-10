@@ -6,9 +6,7 @@ include '../includes/grund-start.inc.php';
 
 <h1>Croissant</h1>
 
-<article>
-   <?= createPic("Croissant", "fig30") ?>
-</article>
+<?= createPic("Croissant", "fig30") ?>
 
 <article>
    <h2>Rezepte</h2>

@@ -6,22 +6,23 @@ include '../includes/grund-start.inc.php';
 
 <h1>Schoko-Kirsch Törtchen mit Strukturbiskuit</h1>
 
-<article>
-   <?= createPic("Schoko-Kirsch-Törtchen mit Strukturbiskuit", "fig30") ?>
+<article class="start">
+   <h2>Zubereitung und Zutaten</h2>
+   <?= createPic("Schoko-Kirsch-Törtchen mit Strukturbiskuit", "") ?>
+   
+   <div class="text">
+      Zutaten für 12 Törtchen in 8cm Dessertring:
+      <?= erstelleListeRezept('ul', "1x Strukturbiskuit (4x Dekorbiskuit und 1x Biskuitrolle) auf Reliefmatten backen;
+      1x Brownie in 12 Formen mit 7 oder 8 cm backen (bleibt noch etwas übrig);
+      1x Kirschfüllung;
+      1x Mascarpone-Sahnecreme (ggf. mit etwas mehr Sahne)"); ?>
 
-   <br>
-
-   Zutaten für 12 Törtchen in 8cm Dessertring:
-   <?= erstelleListeRezept('ul', "1x Strukturbiskuit (4x Dekorbiskuit und 1x Biskuitrolle) auf Reliefmatten backen;
-   1x Brownie in 12 Formen mit 7 oder 8 cm backen (bleibt noch etwas übrig);
-   1x Kirschfüllung;
-   1x Mascarpone-Sahnecreme (ggf. mit etwas mehr Sahne)"); ?>
-
-   Zusammensetzung:
-   <?= erstelleListeRezept('ul', "8cm Dessertring mit Tortenfolie bestücken;
-   Strukturbiskuit halbieren, ca. 23cm lange Streifen zuschneiden und in Dessertring legen;
-   Brownie etwas verkleinern und als Boden in Dessertring legen;
-   Kirschen auf Brownie geben und mit Mascarpone-Sahnecreme auffüllen"); ?>
+      Zusammensetzung:
+      <?= erstelleListeRezept('ul', "8cm Dessertring mit Tortenfolie bestücken;
+      Strukturbiskuit halbieren, ca. 23cm lange Streifen zuschneiden und in Dessertring legen;
+      Brownie etwas verkleinern und als Boden in Dessertring legen;
+      Kirschen auf Brownie geben und mit Mascarpone-Sahnecreme auffüllen"); ?>
+   </div>
 
 </article>
 
