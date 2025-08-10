@@ -1,7 +1,6 @@
 <?php
 
 // Für Erstellung Links und Listen für "Kreationen" im Header und auf Unterseiten.
-
 // Kategorien als Links
 $dessertKategorie = createLink("kreationen-navigation", "Desserts");
 $kuchenKategorie = createLink("kreationen-navigation", "Kuchen");
@@ -89,12 +88,24 @@ function createDropdown(string $kategorie, array $items) {
 
 
 
+// Bild erstellen
+function createPic ($name, $class) {
+    $bildname = dateiname($name) . ".png" ;
+    $output = '<figure class="' . $class . '">' . "\n";
+    $output .= '  <img src="../../assets/images/' . $bildname . '" alt="' . $name . '">' . "\n";
+    $output .= '  <figcaption>' . $name . '</figcaption>' . "\n";
+    $output .= '</figure>' .  "\n";
+
+    return $output; 
+   
+}
+
+
 
 // Seitennamen ändern
 function getPageTitle($siteName = null) {
     return $siteName ?? 'Standardtitel';
 }
-
 
 
 

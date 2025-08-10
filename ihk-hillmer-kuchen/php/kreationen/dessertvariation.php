@@ -6,10 +6,7 @@ include '../includes/grund-start.inc.php';
 
 <h1>Dessertvariation</h1>
 
-<figure class="fig90">
-   <img src="../../assets/images/dessertvariation.png" alt="Dessertvariation">
-   <figcaption>Dessertvariation</figcaption>
-</figure>
+<?= createPic("Dessertvariation", "fig90") ?>
 
 <p>Die Dessertvariation besteht aus folgenden Desserts:</p>
 

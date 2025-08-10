@@ -7,10 +7,7 @@ include '../includes/grund-start.inc.php';
 <h1>Schokoladenmousse im Schokobecher</h1>
 
 <article>
-   <figure class="fig30">
-      <img src="../../assets/images/schokoladenmousse-im-schokobecher.png" alt="Schokoladenmousse im Schokobecher">
-      <figcaption>Schokoladenmousse im Schokobecher</figcaption>
-   </figure>
+   <?= createPic("Schokoladenmousse im Schokobecher", "fig30") ?>
 
    <pre>Zutaten:
 -	Schokoladenmousse

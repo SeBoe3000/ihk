@@ -7,10 +7,7 @@ include '../includes/grund-start.inc.php';
 <h1>Tiramisu</h1>
 
 <article>
-   <figure class="fig30">
-      <img src="../../assets/images/tiramisu.png" alt="Tiramisu">
-      <figcaption>Tiramisu</figcaption>
-   </figure>
+   <?= createPic("Tiramisu", "fig30") ?>
 
    <pre>Zutaten:
 -	1x Biskuitboden

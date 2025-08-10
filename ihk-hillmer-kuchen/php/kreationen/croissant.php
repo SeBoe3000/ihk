@@ -7,10 +7,7 @@ include '../includes/grund-start.inc.php';
 <h1>Croissant</h1>
 
 <article>
-   <figure class="fig30">
-      <img src="../../assets/images/croissant.png" alt="Croissant">
-      <figcaption>Croissant</figcaption>
-   </figure>
+   <?= createPic("Croissant", "fig30") ?>
 </article>
 
 <article>

@@ -7,10 +7,7 @@ include '../includes/grund-start.inc.php';
 <h1>Schoko-Kirsch Törtchen mit Strukturbiskuit</h1>
 
 <article>
-   <figure class="fig30">
-      <img src="../../assets/images/schoko-kirsch-toertchen-mit-strukturbiskuit.png" alt="Schoko-Kirsch-Törtchen mit Strukturbiskuit">
-      <figcaption>Schoko-Kirsch-Törtchen mit Strukturbiskuit</figcaption>
-   </figure>
+   <?= createPic("Schoko-Kirsch-Törtchen mit Strukturbiskuit", "fig30") ?>
 
    <pre>Zutaten für 12 Törtchen in 8cm Dessertring:
 - 1x Strukturbiskuit (4x Dekorbiskuit und 1x Biskuitrolle) auf Reliefmatten backen

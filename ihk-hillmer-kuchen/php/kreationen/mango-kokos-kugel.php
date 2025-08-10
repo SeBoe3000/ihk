@@ -7,10 +7,7 @@ include '../includes/grund-start.inc.php';
 <h1>Mango-Kokos-Kugel</h1>
 
 <article>
-   <figure class="fig30">
-      <img src="../../assets/images/mango-kokos-kugel.png" alt="Mango-Kokos-Kugel">
-      <figcaption>Mango-Kokos-Kugel</figcaption>
-   </figure>
+   <?= createPic("Mango-Kokos-Kugel", "fig30") ?>
 
    <pre>
 Zutaten für 10-15 Kugeln und mehr:

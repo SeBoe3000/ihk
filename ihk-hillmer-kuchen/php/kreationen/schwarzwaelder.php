@@ -7,10 +7,7 @@ include '../includes/grund-start.inc.php';
 <h1>Schwarzwälder</h1>
 
 <article>
-   <figure class="fig30">
-      <img src="../../assets/images/schwarzwaelder.png" alt="Schwarzwälder">
-      <figcaption>Schwarzwälder</figcaption>
-   </figure>
+   <?= createPic("Schwarzwälder", "fig30") ?>
 
    <pre>
 xxx
