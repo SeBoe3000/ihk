@@ -16,6 +16,7 @@ $dessert = [
 ];
 $kuchen = [
     $schwarzwaelder = createLink("kreationen", "Schwarzwälder"),
+    $donauwelle = createLink("kreationen", "Donauwelle"),
 ];
 $gebaeck = [
     $schneckennudeln = createLink("kreationen", "Schneckennudeln"),

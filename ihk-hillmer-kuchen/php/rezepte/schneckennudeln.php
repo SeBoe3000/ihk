@@ -3,7 +3,7 @@ include_once __DIR__ . '/../includes/funktionen.php';
 
 $rezeptname = "Schneckennudeln";
 $obst = erstelleListeRezept('ul', "80g Rosinen");
-$gemuese = erstelleListeRezept('ul', "xxx");
+$gemuese = "";
 $getreide = erstelleListeRezept('ul', "300g Mehl; 75g Zucker");
 $tierisches = erstelleListeRezept('ul', "150g Magerquark; 6EL Milch");
 $sonstiges = erstelleListeRezept('ul', "6EL Öl; 1 Pack. Backpulver");

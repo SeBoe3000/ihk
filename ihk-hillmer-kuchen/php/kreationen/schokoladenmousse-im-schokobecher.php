@@ -1,5 +1,5 @@
 <?php
-$siteName = "Tiramisu";
+$siteName = "Schokoladenmousse im Schokobecher";
 $relPath = '../../';
 include '../includes/grund-start.inc.php';
 ?>

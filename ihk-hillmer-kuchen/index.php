@@ -1,5 +1,5 @@
 <?php
-$siteName = "Startseite";
+$siteName = "Backlust";
 $relPath = '';
 include 'php/includes/grund-start.inc.php';
 ?>
@@ -26,8 +26,8 @@ include 'php/includes/grund-start.inc.php';
 
 <p>
     Neugierig geworden?
-    Hier geht es zu meinen <a href="php/kreationen.php">Kreationen</a> und
-    <a href="php/uebersicht.php">liebsten Rezepten</a>.<br>
+    Hier geht es zu meinen <a href="php/kreationen.php">Kreationen</a> und liebsten 
+    <a href="php/uebersicht.php">Rezepten</a>.<br>
 </p>
 
 <p>
