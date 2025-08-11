@@ -185,6 +185,7 @@ aside nav {
     /* Icon in Mitte von Button plazieren */
     line-height: 35px;
     text-align: center;
+    z-index: 101; /* Stapelreihenfolge, damit ICON im Header über Footer ist */
 }
 
 #back:hover {
@@ -390,6 +391,7 @@ article.start figure {
   margin: 0;
   padding: 0;
   margin-left: 40px;    /* Abstand nur links einfügen */
+  margin-bottom: 10px;  /* Abstand unten einfügen */
 }
 article.start .text {
   flex: 1 1 200px;      /* Wachsen und Schrumpfen mit Grundbreite min 200px */
@@ -401,7 +403,18 @@ article.start > h2 {
 
 
 
+/* Tanzendes Emoji Croissant */
+.emoji {
+    display: inline-block;       /* nötig für transform */
+    animation: dance 4s linear infinite;
+}
 
-
-
-
+/* Animation drehen und hüpfen */
+@keyframes dance {
+    0%, 100% {
+        transform: translateY(0) rotate(-40deg);    /* Von */
+    }
+    50% {
+        transform: translateY(-5px) rotate(20deg);  /* Nach */
+    }
+}

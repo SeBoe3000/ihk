@@ -11,7 +11,7 @@ Seitenstrukturierung
 Textstruktur
 - p, pre  --> ok
 - figure, figcaption --> ok
-- hr, br   --> ok
+- hr, br  --> ok
 - div --> ok
 
 Listen
@@ -21,7 +21,7 @@ Listen
 Textauszeichnung
 - a --> ok
 - em, strong  --> ok
-- span  --> _____
+- span  --> ok
 
 Text
 - blockquote  --> ok
@@ -67,7 +67,7 @@ Positionierung
 
 Einbindung
 - @font-face (Schriftart lokal) --> ok
-- Favicon --> ok (Nachfrage: muss es die Endung .ico haben, oder darf es auch .svg sein?) _____
+- Favicon --> ok (darf auch Endung.svg haben.)
 
 Gestaltung
 - Tabellen --> ok
@@ -83,13 +83,13 @@ PHP
 
 Eindruck
 Inhaltliches
-- Sinnvoller Text und sinnvoller Aufbau der Webseite  --> _____
+- Sinnvoller Text und sinnvoller Aufbau der Webseite  --> ok
   (Kein Blindtext | Zum Thema passende Texte | Footer und Datenschutz vorhanden) 
 
 Layout
-- Einheitliches Layout (nicht von Seite zu Seite anders)  --> _____
+- Einheitliches Layout (nicht von Seite zu Seite anders)  --> ok
 - Bündige Linien, alles sichtbar bei 100%  --> ok, bündige Linien durch "border-collapse: collapse;"
-- Impressum und Datenschutz im Footer (nicht Header) --> ok (Nachfrage: muss Kontakt auch im Footer sein?) _____
+- Impressum und Datenschutz im Footer (nicht Header) --> ok (Kontakt in Header und Footer)
 
 Benutzeroberfläche
 - Logo mit Verknüpfung zur Startseite --> ok

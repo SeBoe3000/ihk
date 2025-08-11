@@ -30,6 +30,8 @@ include '../includes/grund-start.inc.php';
    </div>
 </article>
 
+<hr>
+
 <article>
    <h2>Rezepte</h2>
 

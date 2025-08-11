@@ -23,8 +23,9 @@ include '../includes/grund-start.inc.php';
       Brownie etwas verkleinern und als Boden in Dessertring legen;
       Kirschen auf Brownie geben und mit Mascarpone-Sahnecreme auffüllen"); ?>
    </div>
-
 </article>
+
+<hr>
 
 <article>
    <h2>Rezepte</h2>

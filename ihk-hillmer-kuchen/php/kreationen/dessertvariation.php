@@ -8,6 +8,8 @@ include '../includes/grund-start.inc.php';
 
 <?= createPic("Dessertvariation", "fig90") ?>
 
+<hr>
+
 <p>Die Dessertvariation besteht aus folgenden Desserts:</p>
 
 <ul>

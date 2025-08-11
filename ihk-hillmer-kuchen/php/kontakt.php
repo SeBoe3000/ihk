@@ -75,13 +75,13 @@ $formularAbgeschickt = ($_SERVER["REQUEST_METHOD"] === "POST");
     $telefonnummer = $_POST["tel"] ?? "";
     $Datenschutz  = $_POST["dsgvo"] ?? "";
 
-    echo "Hallo $anrede $vorname $nachname wir haben ihre Nachricht mit dem Betreff \"$betreff\"
-    und folgender Beschreibung erhalten: <br>";
+    echo "<p>Hallo $anrede $vorname $nachname, wir haben ihre Nachricht mit dem Betreff \"$betreff\"
+    und folgender Beschreibung erhalten: <br></p>";
 
-    echo "\"$beschreibung\"<br>";
+    echo "<p>\"$beschreibung\"<br></p>";
 
-    echo "Wir werden uns schnellstmöglichst bei Ihnen melden, unter der Telefonnummer $telefonnummer
-    bzw. E-Mail-Adresse $mail.";
+    echo "<p>Wir werden uns schnellst möglichst bei Ihnen unter der Telefonnummer $telefonnummer
+    bzw. E-Mail-Adresse $mail melden.</p>";
     ?>
 <?php endif; ?>
 

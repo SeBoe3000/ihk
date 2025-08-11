@@ -8,6 +8,8 @@ include '../includes/grund-start.inc.php';
 
 <?= createPic("Croissant", "fig30") ?>
 
+<hr>
+
 <article>
    <h2>Rezepte</h2>
 

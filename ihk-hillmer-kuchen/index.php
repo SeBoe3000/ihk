@@ -31,7 +31,8 @@ include 'php/includes/grund-start.inc.php';
 </p>
 
 <p>
-    Und manchmal, ganz still und heimlich, tanzen sogar die Croissants ... <br>
+    Und manchmal, ganz still und heimlich, tanzen sogar die Croissants, in klein:
+    <span class="emoji">&#x1F950</span><span class="emoji">&#x1F950</span> und in groß ... <br>
     <video controls title="Croissant" poster="assets/images/croissant.png">
         <source src="assets/videos/croissant.mp4">
         <source src="assets/videos/apfelstrudel.mp4">
