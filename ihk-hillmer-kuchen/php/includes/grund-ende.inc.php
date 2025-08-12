@@ -1,3 +1,5 @@
+        <?php $content = ob_get_clean(); // Puffer auslesen, Inhaltsverzeichnis einbauen und ausgeben
+echo generateTOCRegex($content); ?>
         </section>
     </main>
     <?php include("$relPath"."php/templates/footer.php"); ?>

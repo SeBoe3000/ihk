@@ -224,4 +224,67 @@ function erstelleTabelleRezept($rezeptname, $schritte, $tfoot, $zutaten1, $zutat
     return $html;
 }
 
+
+
+/* Inhaltsverzeichnis erstellen, nach erster h1 einfügen und ID's setzen */
+function generateTOCRegex($html) {
+    /* Überschriften h2 bis h6 mit Reg-Ex suchen
+        $matches[0]: kompletten gefundenen Tags z.B. <h1>Start</h1>
+        $matches[1]: Tag-Typ                    z.B. h1
+        $matches[2]: Inhalt der Überschrift     z.B. Start
+        <(h[1-3]): h2 bis h6 Tags in $matches[1] speichern, dabei beliebige Attribute ignorieren mit [^>]*
+        >(.*?)<\/\1>: Inhalt speichern in $matches[2], wobei \1 gleiche Tag $matches[1]
+        i: Groß-/Kleinschreibung egal*/
+    preg_match_all('/<(h[2-6])[^>]*>(.*?)<\/\1>/i', $html, $matches);
+    
+    // bei keinen Überschriften Rückgabe unverändertem HTML-Text
+    if (empty($matches[0])) return $html;
+
+    // verschachteltes Inhaltsverzeichnis erstellen und ID's einfügen
+    $toc = "<strong>Inhaltsverzeichnis</strong>"; // Vor Inhaltsverzeichnis anhängen
+    $currentLevel = 1; // Ebene letzten Überschrift merken, aber h1 weglassen (sonst startet Aufzählung auf Ebene 2)
+
+    // Schleife über alle Überschriften
+    foreach ($matches[1] as $i => $tag) { // Index $i um zu passenden Text & kompletten Tag zu kommen
+        $level = (int)substr(strtolower($tag), 1); // Ebene Überschrift bestimmen, also h davor entfernen
+        $text = strip_tags($matches[2][$i]); // Text um HTML-Tags bereinigen
+        // ID aus Text generieren, nur a-z 0-9 und - dafür zuerst Zeichen per Funktion dateiname umwandeln und restliche ungültige entfernen
+        $id = strtolower(preg_replace('/[^a-z0-9]+/', '-', trim(dateiname(trim($text))))); 
+
+        // ID einfügen, durch überschreiben Original-Tag mit ID
+        $pattern = '/' . preg_quote($matches[0][$i], '/') . '/';
+        $replacement = "<$tag id=\"$id\">$text</$tag>";
+        $html = preg_replace($pattern, $replacement, $html, 1);
+
+        // Geschachteletes Inhaltsverzeichnis erstellen
+        if ($level > $currentLevel) { // neue Überschrift ist tiefer (größeres Level) --> neue UL öffnen
+            $toc .= str_repeat("<ul>\n", $level - $currentLevel);
+        } elseif ($level < $currentLevel) { // höher --> UL schließen
+            $toc .= str_repeat("</li></ul>\n", $currentLevel - $level) . "</li>\n";
+        } else { // gleiche Ebene --> vorherige LI schließen (außer beim ersten Element)
+            if ($i != 0) $toc .= "</li>\n";
+        }
+
+        // Listeneintrag mit Link hinzufügen:
+        $toc .= "<li><a href=\"#$id\">$text</a>";
+
+        $currentLevel = $level; // aktuelles Level merken (relativ)
+    }
+
+    // Offene UL und LI schließen aber nicht beim ersten Level, sonst ein </li></ul>\n zu viel am Ende
+    while ($currentLevel != 1) {
+        $toc .= "</li></ul>\n";
+        $currentLevel--;
+    }
+
+    // Suche nach </h1> und sofern vorhanden, Inhaltsverzeichnis mit substr_replace einfügen
+    $pos = strpos($html, '</h1>');
+    if ($pos !== false) {
+        $pos += strlen('</h1>');
+        $html = substr_replace($html, $toc, $pos, 0);
+    }
+
+    // Rückgabe HTML-String mit eingefügtem Inhaltsverzeichnis und gesetzten IDs
+    return $html;
+}
 ?>

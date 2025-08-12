@@ -1,5 +1,7 @@
 <?php
+ob_start(); // Ausgabe zwischenspeichern (nicht direkt ausgeben) für spätere Manipulation, um Inhaltsverzeichnis automatisch einzufügen
 include_once __DIR__ . '/funktionen.php';
+
 
 // Zum Umschalten von Light und Dark Mode per Link und auslesen innerhalb einer Session
 session_start();
