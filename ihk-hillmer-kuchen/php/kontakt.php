@@ -1,12 +1,10 @@
 <?php
 $siteName = "Kontakt";
-$relPath = '../';
-include 'includes/grund-start.inc.php';
+$relPath = "../";
+include "includes/grund-start.inc.php";
 ?>
 
-<?php
-$formularAbgeschickt = ($_SERVER["REQUEST_METHOD"] === "POST");
-?>
+<?php $formularAbgeschickt = $_SERVER["REQUEST_METHOD"] === "POST"; ?>
 
 <?php if (!$formularAbgeschickt): ?>
     <h1>Kontakt</h1>
@@ -73,7 +71,7 @@ $formularAbgeschickt = ($_SERVER["REQUEST_METHOD"] === "POST");
     $betreff = $_POST["bet"] ?? "";
     $beschreibung = $_POST["bes"] ?? "";
     $telefonnummer = $_POST["tel"] ?? "";
-    $Datenschutz  = $_POST["dsgvo"] ?? "";
+    $Datenschutz = $_POST["dsgvo"] ?? "";
 
     echo "<p>Hallo $anrede $vorname $nachname, wir haben ihre Nachricht mit dem Betreff \"$betreff\"
     und folgender Beschreibung erhalten: <br></p>";
@@ -85,4 +83,4 @@ $formularAbgeschickt = ($_SERVER["REQUEST_METHOD"] === "POST");
     ?>
 <?php endif; ?>
 
-<?php include("includes/grund-ende.inc.php"); ?>
+<?php include "includes/grund-ende.inc.php"; ?>

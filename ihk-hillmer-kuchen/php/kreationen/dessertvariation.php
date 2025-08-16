@@ -1,7 +1,7 @@
 <?php
 $siteName = "Dessertvariation";
-$relPath = '../../';
-include '../includes/grund-start.inc.php';
+$relPath = "../../";
+include "../includes/grund-start.inc.php";
 ?>
 
 <h1>Dessertvariation</h1>
@@ -13,9 +13,9 @@ include '../includes/grund-start.inc.php';
 <p>Die Dessertvariation besteht aus folgenden Desserts:</p>
 
 <ul>
-    <li><?= createLink("kreationen", "Tiramisu",) ?></li>
-    <li><?= createLink("kreationen", "Mango-Kokos-Kugel",) ?></li>
-    <li><?= createLink("kreationen", "Schoko-Kirsch Törtchen mit Strukturbiskuit",) ?></li>
+    <li><?= createLink("kreationen", "Tiramisu") ?></li>
+    <li><?= createLink("kreationen", "Mango-Kokos-Kugel") ?></li>
+    <li><?= createLink("kreationen", "Schoko-Kirsch Törtchen mit Strukturbiskuit") ?></li>
 </ul>
 
-<?php include("../includes/grund-ende.inc.php"); ?>
+<?php include "../includes/grund-ende.inc.php"; ?>

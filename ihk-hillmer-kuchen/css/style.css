@@ -1,71 +1,77 @@
 /* Schriftart einbinden*/
 @font-face {
-   font-family: "LibertinusSans";
-   src: url("../assets/fonts/libertinus-sans-regular.ttf");
+    font-family: "LibertinusSans";
+    src: url("../assets/fonts/libertinus-sans-regular.ttf");
 }
 
 /* Standardfarben Light und Dark Mode */
 :root {
-    --bgp: #F9F4F5;         /* Hintergrund primary */
-    --bgs: #D5C7E2;         /* Hintergrund second */
+    --bgp: #f9f4f5; /* Hintergrund primary */
+    --bgs: #d5c7e2; /* Hintergrund second */
     --bga-rgb: 156, 136, 172; /* Hintergrund accent #9C88AC */
-    --text: #281826;        /* Textfarbe */
-    --texts: #502F4C;       /* Textfarbe second */ 
-    --line: #281826;        /* Linien */
+    --text: #281826; /* Textfarbe */
+    --texts: #502f4c; /* Textfarbe second */
+    --line: #281826; /* Linien */
 }
 body.dark {
-    --bgp: #281826;         /* Hintergrund primary*/
-    --bgs: #604464;         /* Hintergrund second */
+    --bgp: #281826; /* Hintergrund primary*/
+    --bgs: #604464; /* Hintergrund second */
     --bga-rgb: 156, 136, 172; /* Hintergrund accent #9C88AC */
-    --text: #F9F4F5;        /* Textfarbe */
-    --texts: #E1D6E8;       /* Textfarbe second */
-    --line: #F9F4F5;        /* Linien */
+    --text: #f9f4f5; /* Textfarbe */
+    --texts: #e1d6e8; /* Textfarbe second */
+    --line: #f9f4f5; /* Linien */
 }
-:root, body.dark {
+:root,
+body.dark {
     --bga: rgb(var(--bga-rgb)); /* Hintergrund accent ohne Transparenz */
     --bga-tran: rgba(var(--bga-rgb), 0.5); /* Hintergrund accent mit Transparenz */
 }
 /* Anwendung auf body */
-body, pre {
+body,
+pre {
     color: var(--text);
-    font-family: "LibertinusSans";   
+    font-family: "LibertinusSans";
 }
 
 
 
 /* Gestaltung header, footer und co */
-header, footer {
-   background: var(--bga);
-   color: var(--text);
-   text-align: center;
+header,
+footer {
+    background: var(--bga);
+    color: var(--text);
+    text-align: center;
 }
-header, footer, aside {
-   padding-left: 5px;
-   padding-right: 5px;
+header,
+footer,
+aside {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 body {
-   margin: 0px;
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 aside {
-   background: var(--bgs);
-   flex: 1;
-   min-width: 160px;
-   max-width: 160px;
+    background: var(--bgs);
+    flex: 1;
+    min-width: 160px;
+    max-width: 160px;
 }
 section {
-   padding: 5px;
-   background: var(--bgp);
-   flex: 2;
-   min-width: 0;          /* Verhindert, dass Inhalte Section zu breit machen. Container darf nicht überlaufen. */
+    padding: 5px;
+    background: var(--bgp);
+    flex: 2;
+    min-width: 0; /* Verhindert, dass Inhalte Section zu breit machen. Container darf nicht überlaufen. */
 }
-main{
-   display: flex;
-   flex: 1;
+main {
+    display: flex;
+    flex: 1;
 }
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 /* Keine Veränderung von header */
@@ -81,51 +87,55 @@ footer {
 
 
 /* Gestaltung Navigation in Header und Footer  */
-header nav li, footer nav li {
-   background: var(--bga);
-   display: inline-block;
-   padding: 10px;
-   margin-right: 20px;
-   height: 22px; /* damit Icon und Text auf einer Höhe sind */
+header nav li,
+footer nav li {
+    background: var(--bga);
+    display: inline-block;
+    padding: 10px;
+    margin-right: 20px;
+    height: 22px; /* damit Icon und Text auf einer Höhe sind */
 }
-header ul, footer ul {
-   padding-left: 0px;
-   margin: 0px;
+header ul,
+footer ul {
+    padding-left: 0px;
+    margin: 0px;
 }
-header nav a, footer nav a{
-   color: var(--text);
-   text-decoration: none;
-   white-space: nowrap;         /* Verhindert Zeilenumbrüche in Links */
+header nav a,
+footer nav a {
+    color: var(--text);
+    text-decoration: none;
+    white-space: nowrap; /* Verhindert Zeilenumbrüche in Links */
 }
-header nav li:hover, footer nav li:hover{
-   background: var(--bgs);
+header nav li:hover,
+footer nav li:hover {
+    background: var(--bgs);
 }
 /* nur Footer */
-footer ul{
-   text-align: right;
-   margin-right: 60px;
+footer ul {
+    text-align: right;
+    margin-right: 60px;
 }
 /* nur Header */
 header .dropdown-content {
-   position: absolute;
-   left: 0px;
-   top: 100%;
-   display: none;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    display: none;
 }
 header .dropdown-content li {
-   display: block;
-   margin: 0px; /* ansonsten bei Anordnung seitlich links Abstand 20px rechts zwischen Ebenen  */
-   padding: 5px;
+    display: block;
+    margin: 0px; /* ansonsten bei Anordnung seitlich links Abstand 20px rechts zwischen Ebenen  */
+    padding: 5px;
 }
 header .dropdown {
-   position: relative;
+    position: relative;
 }
 /* "display: block;" in "header .dropdown:hover .dropdown-content" überflüssig, da Steuerung in erster & weiteren Ebenen */
- 
+
 /* Mehrstufiges Dropdown-Menü */
 /* Untermenüs immer verstecken */
 header nav ul ul {
-    display: none ;
+    display: none;
 }
 /* Position erste Dropdown-Ebene (unter dem Eltern-Li) */
 header nav > ul > li:hover > ul {
@@ -155,17 +165,14 @@ Da aktuell nur 3 Ebenen vorhanden passt die aktuelle Lösung auch. */
 /* Gestaltung Navigation in Aside (Werbeanzeige) */
 /* Hinweis: Facebooks Iframe ist nicht responsive, daher fixe Breite von aside. */
 aside nav iframe {
-   transform: scale(0.3);       /* Verkleinert Anzeige auf 30% */
-   transform-origin: top left;  /* Festlegung Skalierungs-Ursprungspunkt */
+    transform: scale(0.3); /* Verkleinert Anzeige auf 30% */
+    transform-origin: top left; /* Festlegung Skalierungs-Ursprungspunkt */
 }
-
 aside nav {
-    width: 150px;               /* feste Breite, da iframe skalliert wird */
-    overflow-wrap: break-word;  /* Textumbruch, wenn nicht in Container passt*/
+    width: 150px; /* feste Breite, da iframe skalliert wird */
+    overflow-wrap: break-word; /* Textumbruch, wenn nicht in Container passt*/
     position: fixed;
 }
-
-
 
 /* Gestaltung ICON zurück nach oben */
 #back {
@@ -187,7 +194,6 @@ aside nav {
     text-align: center;
     z-index: 101; /* Stapelreihenfolge, damit ICON im Header über Footer ist */
 }
-
 #back:hover {
     background-color: var(--bgs);
     text-decoration: none;
@@ -197,19 +203,22 @@ aside nav {
 
 /* Gestaltung Rezepttabelle */
 .rezept {
-    width: 100%;                /* Tabelle nimmt volle Breite ein */
+    width: 100%; /* Tabelle nimmt volle Breite ein */
     border-collapse: collapse;
 }
-.rezept th, .rezept td, .rezept caption {
+.rezept th,
+.rezept td,
+.rezept caption {
     border: 3px solid var(--line);
     padding: 0.4rem;
     vertical-align: top;
     /* Positioniert Text in Spalte oben */
 }
 .rezept caption {
-    border-bottom: none;    /* Entfernt doppelte Linie zwischen caption und thead tr */
+    border-bottom: none; /* Entfernt doppelte Linie zwischen caption und thead tr */
 }
-.rezept thead th, .rezept caption {
+.rezept thead th,
+.rezept caption {
     background-color: var(--bga);
     color: var(--texts);
 }
@@ -218,12 +227,14 @@ tfoot td {
     font-size: 0.7em;
     text-align: center;
 }
-.grid { /* Anordnung Zutaten in 4 Bereiche */
+.grid {
+    /* Anordnung Zutaten in 4 Bereiche */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
-.table-wrapper { /* Horiziontales Scrollen, wenn Inhalt zu breit ist */
+.table-wrapper {
+    /* Horiziontales Scrollen, wenn Inhalt zu breit ist */
     overflow-x: auto;
     width: 100%;
     scrollbar-color: var(--text) var(--bgp); /* Farbe Scrollbar */
@@ -247,7 +258,10 @@ section a::after {
 
 /* Gestaltung von Formularen */
 /* Farbe Platzhalter, Auswahlen und Button */
-input::placeholder, textarea::placeholder, option, select {
+input::placeholder,
+textarea::placeholder,
+option,
+select {
     color: var(--bga);
     font-family: "LibertinusSans";
 }
@@ -259,39 +273,45 @@ button {
 /* Anordnung Label+Input über volle Breite. Anordnung Checkbox+Label ganz links. Anordnung Buttons in Mitte */
 .form-group {
     display: grid;
-    grid-template-columns: 100px auto;  /* Label fix, Feld flexibel */
-    align-items: center;                /* Label vertikal zentriert */
-    width: 100%;                        /* Form-Gruppen füllen volle Breite */
-    max-width: 100vw;                   /* max Breite: Bildschirmbreite */
+    grid-template-columns: 100px auto; /* Label fix, Feld flexibel */
+    align-items: center; /* Label vertikal zentriert */
+    width: 100%; /* Form-Gruppen füllen volle Breite */
+    max-width: 100vw; /* max Breite: Bildschirmbreite */
 }
-.form-checkbox, .form-button {
+.form-checkbox,
+.form-button {
     display: flex;
 }
 .form-checkbox {
-    width: fit-content;     /* nur so breit wie nötig */
-    margin-left: 0;         /* ganz links */
+    width: fit-content; /* nur so breit wie nötig */
+    margin-left: 0; /* ganz links */
 }
 .form-button {
-    gap: 1em;           /* Abstand zwischen Buttons */
+    gap: 1em; /* Abstand zwischen Buttons */
     width: fit-content; /* nur so breit wie nötig */
-    margin-left: auto;  /* mittig */
+    margin-left: auto; /* mittig */
     margin-right: auto; /* mittig */
 }
 /* Kein Textumbruch von Labels */
 label {
-    white-space: nowrap;    
+    white-space: nowrap;
 }
 /* Abstände zwischen Text und Elementen */
-.form-group, .form-checkbox, .form-button {
+.form-group,
+.form-checkbox,
+.form-button {
     margin-bottom: 1em; /* Abstand zu nächsten Elementen */
-    gap: 1.5em;         /* Abstand zwischen Text und Eingabe*/
+    gap: 1.5em; /* Abstand zwischen Text und Eingabe*/
 }
-input, textarea, select, button {
-    padding: 0.4em;     /* Innenabstand Eingabefelder */          
+input,
+textarea,
+select,
+button {
+    padding: 0.4em; /* Innenabstand Eingabefelder */
 }
 /* Höhe Textarea */
 textarea {
-    height: 100px;  
+    height: 100px;
 }
 /* bei verpflichtenden Eingaben einfügen */
 label:has(+ input[required])::after,
@@ -301,11 +321,12 @@ label:has(+ textarea[required])::after,
     content: " *";
 }
 /* aktives Feld hervorheben */
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
     outline: 2px solid var(--bga);
     background-color: var(--bgs);
 }
-
 
 
 
@@ -317,32 +338,33 @@ input:focus, textarea:focus, select:focus {
 .fig30 {
     width: 30%;
 }
-figure > img { /* 100% der Breite vom Container figure einnehmen, dadurch geht figcaption nicht über Bild hinaus. */
+figure > img {
+    /* 100% der Breite vom Container figure einnehmen, dadurch geht figcaption nicht über Bild hinaus. */
     width: 100%;
     height: auto;
     vertical-align: bottom;
     background-color: var(--bgs);
 }
 figcaption {
-   background: var(--bga-tran);
-   font-size: 20px;
-   text-align: center;
-   color: var(--text);
-   position: absolute;
-   bottom: 0px;
-   width: 100%;
-   padding: 5px;
-   box-sizing: border-box;
+    background: var(--bga-tran);
+    font-size: 20px;
+    text-align: center;
+    color: var(--text);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
 figure {
-   position: relative;
-   display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 
 
 /* Gestaltung Video und Audio */
-video  {
+video {
     width: 30%;
     height: auto;
 }
@@ -355,19 +377,18 @@ audio {
 
 /* Gestaltung hr */
 hr {
-  border: none;
-  height: 4px;
-  background: linear-gradient(to right, var(--bgs), var(--bga), var(--bgs));
-  border-radius: 2px;
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, var(--bgs), var(--bga), var(--bgs));
+    border-radius: 2px;
 }
 
 
 
 /* Icon für Startseite in Header */
-.icon {    
+.icon {
     vertical-align: middle; /* Ausrichtung Icon vertikal mittig zur Grundlinie (baseline) vom umgebenden Text */
 }
-
 .icon img {
     width: 32px;
     height: auto;
@@ -377,44 +398,44 @@ hr {
 
 /* Gestaltung Article mit Bild und Text daneben */
 article.start {
-  display: flex;
-  flex-wrap: wrap;      /* Umbruch wenn Platz zu wenig */
-  gap: 1em;             /* Abstand zwischen Boxen */
-  align-items: flex-start;  /* Ausrichtung am oberen Rand Container. Ansonsten ist figcaption bei viel Text zu weit unten. */
+    display: flex;
+    flex-wrap: wrap; /* Umbruch wenn Platz zu wenig */
+    gap: 1em; /* Abstand zwischen Boxen */
+    align-items: flex-start; /* Ausrichtung am oberen Rand Container. Ansonsten ist figcaption bei viel Text zu weit unten. */
 }
 article.start img {
-  flex: 0 0 auto;       /* Kein wachsen oder schrumpfen */
-  max-width: 300px;     /* Maximale Breite Bild */
-  width: 100%;          /* Volle Breite ausfüllen innerhalb max-width */
+    flex: 0 0 auto; /* Kein wachsen oder schrumpfen */
+    max-width: 300px; /* Maximale Breite Bild */
+    width: 100%; /* Volle Breite ausfüllen innerhalb max-width */
 }
 article.start figure {
-  margin: 0;
-  padding: 0;
-  margin-left: 40px;    /* Abstand nur links einfügen */
-  margin-bottom: 10px;  /* Abstand unten einfügen */
+    margin: 0;
+    padding: 0;
+    margin-left: 40px; /* Abstand nur links einfügen */
+    margin-bottom: 10px; /* Abstand unten einfügen */
 }
 article.start .text {
-  flex: 1 1 200px;      /* Wachsen und Schrumpfen mit Grundbreite min 200px */
+    flex: 1 1 200px; /* Wachsen und Schrumpfen mit Grundbreite min 200px */
 }
 article.start > h2 {
-  flex: 0 0 100%;     /* nicht wachsen, nicht schrumpfen, 100% Breite */
-  margin: 0px;
+    flex: 0 0 100%; /* nicht wachsen, nicht schrumpfen, 100% Breite */
+    margin: 0px;
 }
 
 
 
 /* Tanzendes Emoji Croissant */
 .emoji {
-    display: inline-block;       /* nötig für transform */
+    display: inline-block; /* nötig für transform */
     animation: dance 4s linear infinite;
 }
-
 /* Animation drehen und hüpfen */
 @keyframes dance {
-    0%, 100% {
-        transform: translateY(0) rotate(-40deg);    /* Von */
+    0%,
+    100% {
+        transform: translateY(0) rotate(-40deg); /* Von */
     }
     50% {
-        transform: translateY(-5px) rotate(20deg);  /* Nach */
+        transform: translateY(-5px) rotate(20deg); /* Nach */
     }
 }

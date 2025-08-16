@@ -57,7 +57,7 @@ Selektoren
 - Attributselektor --> ok, z.B. [required] in label:has(+ input[required])::after
 - Pseudoklasse (mind. 2 Arten) --> ok, z.B. footer nav li:hover / :has() in label:has(+ input[required])::after / input:focus
 - Pseudoelemente (mind. 2 Arten) --> ok, input::placeholder / ::after in label:has(+ input[required])::after
-- Kombinator (mind. 3 Arten) --> ok, z.B. Nachfahre: footer nav li / Geschwister: label:has(+ input[required])::after / Nachfahre: figure > img
+- Kombinator (mind. 3 Arten) --> ok, z.B. Nachfahre: footer nav li / Geschwister: label:has(+ input[required])::after / Kind: figure > img
 
 Positionierung
 - relative --> ok
@@ -101,19 +101,19 @@ Benutzeroberfläche
 
 Negatives
 Fehler
-- Syntaxfehler bei HTML (-1P pro Fehlertyp)
+- Syntaxfehler bei HTML (-1P pro Fehlertyp) --> ok
   (Hinweis: Auch bei Impressum und Datenschutz! ONLINE-VALIDATOR mit Google Chrome nutzen!
   Wichtig: Dozent prüft Fehler nicht, sondern zählt lediglich.)
-- Hinweise oder Fehler bei PHP (-2P pro Fehler) 
-- Links / Menüeinträge funktionieren nicht (-1P pro Link) 
+- Hinweise oder Fehler bei PHP (-2P pro Fehler) --> ok
+- Links / Menüeinträge funktionieren nicht (-1P pro Link) --> ok
 
 Ordnerstruktur und Dateinamen
-- Datei- und Ordnerstruktur nicht eingehalten (-1P pro Datei / Ordner)
+- Datei- und Ordnerstruktur nicht eingehalten (-1P pro Datei / Ordner) --> ok
   (In der ZIP-Datei darf zudem kein Unterordner mit dem Projekt sein! SEHR HÄUFIG IGNORIERT!) 
-- Dateinamen haben: Großbuchstaben, Leerzeichen, Umlaute, Sonderzeichen
+- Dateinamen haben: Großbuchstaben, Leerzeichen, Umlaute, Sonderzeichen --> ok
   (Bitte auch bei Bildern, Medien und Schriftarten! Minuszeichen möglich. -1P pro Datei / Ordner)
 
 Sonstiges
-- Hohe Ladezeiten (z.B. weil Bilder mit mehr als 5 MB geladen werden müssen)  
-- Schlecht formatierter Quelltext (Einheitlich verschachtelt ► Empfehlung: Code Beautifier. Kein Wechsel z.B. zwischen <br> und <br />) 
-- Mediendateien lassen sich nicht abspielen (Häufiger Grund: Absoluter Pfad oder falscher relativer Pfad) 
+- Hohe Ladezeiten (z.B. weil Bilder mit mehr als 5 MB geladen werden müssen) --> ok
+- Schlecht formatierter Quelltext (Einheitlich verschachtelt ► Empfehlung: Code Beautifier. Kein Wechsel z.B. zwischen <br> und <br />) --> ok
+- Mediendateien lassen sich nicht abspielen (Häufiger Grund: Absoluter Pfad oder falscher relativer Pfad) --> ok

@@ -1,7 +1,7 @@
 <?php
 $siteName = "Kuchen";
-$relPath = '../../';
-include '../includes/grund-start.inc.php';
+$relPath = "../../";
+include "../includes/grund-start.inc.php";
 ?>
 
 <h1>Meine Kuchen</h1>
@@ -9,7 +9,7 @@ include '../includes/grund-start.inc.php';
 <p>Hallo zusammen, ich möchte Euch hier meine Kuchen vorstellen:</p>
 
 <ul>
-    <?= createList($kuchen, 'li');?>
+    <?= createList($kuchen, "li") ?>
 </ul>
 
-<?php include("../includes/grund-ende.inc.php"); ?>
+<?php include "../includes/grund-ende.inc.php"; ?>

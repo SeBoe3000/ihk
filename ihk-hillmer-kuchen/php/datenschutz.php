@@ -1,7 +1,7 @@
 <?php
 $siteName = "Datenschutz";
-$relPath = '../';
-include 'includes/grund-start.inc.php';
+$relPath = "../";
+include "includes/grund-start.inc.php";
 ?>
 
 <h1>Datenschutz</h1>
@@ -16,4 +16,4 @@ include 'includes/grund-start.inc.php';
 
 <p>Weitere Informationen finden Sie in unserer ausführlichen Datenschutzerklärung.</p>
 
-<?php include("includes/grund-ende.inc.php"); ?>
+<?php include "includes/grund-ende.inc.php"; ?>

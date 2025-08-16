@@ -1,7 +1,7 @@
 <?php
 $siteName = "Impresum";
-$relPath = '../';
-include 'includes/grund-start.inc.php';
+$relPath = "../";
+include "includes/grund-start.inc.php";
 ?>
 
 <h1>Impresum</h1>
@@ -15,4 +15,4 @@ include 'includes/grund-start.inc.php';
     E-Mail: info@mustermann.de
 </p>
 
-<?php include("includes/grund-ende.inc.php"); ?>
+<?php include "includes/grund-ende.inc.php"; ?>

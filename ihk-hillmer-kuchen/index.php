@@ -1,7 +1,7 @@
 <?php
 $siteName = "Backlust";
-$relPath = '';
-include 'php/includes/grund-start.inc.php';
+$relPath = "";
+include "php/includes/grund-start.inc.php";
 ?>
 
 <h1>Herzlich Willkommen</h1>
@@ -70,4 +70,4 @@ include 'php/includes/grund-start.inc.php';
 - Kuchen gut auskühlen lassen
 </pre>
 
-<?php include("php/includes/grund-ende.inc.php"); ?>
+<?php include "php/includes/grund-ende.inc.php"; ?>
